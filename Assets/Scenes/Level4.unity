@@ -309,7 +309,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Health:'
+  m_text: 'Health: 3'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8a89fa14b10d46a99122fd4f73fca9a2, type: 2}
   m_sharedMaterial: {fileID: 2140474, guid: 8a89fa14b10d46a99122fd4f73fca9a2, type: 2}
@@ -517,8 +517,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8cf7850cfb2d64c8cb24fd995c096f11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scoreUI: {fileID: 0}
-  lifeUI: {fileID: 0}
+  scoreUI: {fileID: 1320722237}
+  lifeUI: {fileID: 1035938874}
 --- !u!4 &1090250006
 Transform:
   m_ObjectHideFlags: 0
@@ -676,7 +676,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Score:'
+  m_text: 'Score: 0'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8a89fa14b10d46a99122fd4f73fca9a2, type: 2}
   m_sharedMaterial: {fileID: 2140474, guid: 8a89fa14b10d46a99122fd4f73fca9a2, type: 2}
