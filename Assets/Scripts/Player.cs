@@ -14,8 +14,7 @@ public class Player : MonoBehaviour
 
     private Rigidbody2D rb;
     private Animator Animator;
-
-
+    private Collider2D _collider2D;
 
     void Start(){
         rb = GetComponent<Rigidbody2D>();
@@ -26,7 +25,7 @@ public class Player : MonoBehaviour
 
         float xSpeed = Input.GetAxis("Horizontal") * speed;
         rb.velocity = new Vector2(xSpeed, rb.velocity.y);
-      
+
         float xScale = transform.localScale.x;
         if ((xSpeed < 0 && xScale >0) || (xSpeed > 0 && xScale < 1)){
             transform.localScale *= new Vector2(-1, 1);
@@ -44,6 +43,11 @@ public class Player : MonoBehaviour
             Animator.SetBool("Jump", !isGrounded);
         }
         Animator.SetBool("Jump", !isGrounded);
+
+        // player dies if he falls off the map
+        if (transform.position.y < -10){
+            Destroy(gameObject);
+        }
     }
 
 
