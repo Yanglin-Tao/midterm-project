@@ -38,11 +38,12 @@ public class Player : MonoBehaviour
 
     void Update(){
 
-        isGrounded = Physics2D.OverlapCircle(feet.position, .25f, ground);
+        isGrounded = Physics2D.OverlapCircle(feet.position, .2f, ground);
         if (Input.GetButtonDown("Jump") && isGrounded){
-                rb.AddForce(new Vector2(0, jumpForce));
-       
+            rb.AddForce(new Vector2(0, jumpForce));
+            Animator.SetBool("Jump", !isGrounded);
         }
+        Animator.SetBool("Jump", !isGrounded);
     }
 
 
