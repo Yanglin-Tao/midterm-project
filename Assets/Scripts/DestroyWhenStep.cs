@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class DestroyWhenStep : MonoBehaviour
 {
+    public float destroyDelay = 1.0f;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -20,8 +22,13 @@ public class DestroyWhenStep : MonoBehaviour
     {
         if (collision.gameObject.tag == "Player")
         {
-            // Destroy the ground
-            Destroy(gameObject);
+            StartCoroutine(Destroy());
         }
+    }
+
+    IEnumerator Destroy()
+    {
+        yield return new WaitForSeconds(destroyDelay);
+        Destroy(gameObject);
     }
 }
