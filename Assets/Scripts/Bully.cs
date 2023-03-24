@@ -5,7 +5,8 @@ using UnityEngine;
 public class Bully : MonoBehaviour
 {
     public float speed = 5;
-    public float maxMoveDistance = 5;
+    public float maxXPos = 0;
+    public float minXPos = 0;
     public float jumpProbability = 0.1f;
     public float jumpForce = 300;
     public LayerMask WhatIsGround;
@@ -24,7 +25,7 @@ public class Bully : MonoBehaviour
         // move from left to right and back forever
         // if moved for more than move_distance, turn and change direction on just x axis
         _rigidbody.velocity = new Vector2(speed, _rigidbody.velocity.y);
-        if (transform.position.x > maxMoveDistance)
+        if (transform.position.x > maxXPos)
         {
             speed = -Mathf.Abs(speed);
             // get current localScale
@@ -32,7 +33,7 @@ public class Bully : MonoBehaviour
             // flip x axis
             transform.localScale = new Vector3(-localScale.x, localScale.y, localScale.z);
         }
-        else if (transform.position.x < -maxMoveDistance)
+        else if (transform.position.x < minXPos)
         {
             speed = Mathf.Abs(speed);
             // get current localScale
