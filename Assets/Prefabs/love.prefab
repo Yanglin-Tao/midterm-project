@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 8457821590988754310}
   - component: {fileID: 8457821590988754309}
   - component: {fileID: 8457821590988754312}
+  - component: {fileID: -5796166233351683878}
   m_Layer: 0
   m_Name: love
   m_TagString: Untagged
@@ -27,8 +28,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8457821590988754308}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -18.339, y: -4.7175, z: 0}
-  m_LocalScale: {x: 0.5904464, y: 0.5415, z: 1}
+  m_LocalPosition: {x: -18.9208, y: -4.2155, z: 0}
+  m_LocalScale: {x: 0.36043882, y: 0.31940678, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -133,3 +134,16 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &-5796166233351683878
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8457821590988754308}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d300e06fbf2174664a892234e525d99b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  score: 1
