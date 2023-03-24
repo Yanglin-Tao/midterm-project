@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: becac19cdb652423e86baeb5a0de9c2b, type: 3}
+  m_Name: Convo01
+  m_EditorClassIdentifier: 
+  allLines:
+  - speaker: {fileID: 11400000, guid: 33e14e9ea947149c1b6419a1b09d92bd, type: 2}
+    dialogue: Hey, why are you always picking on me? What have I ever done to you?
+  - speaker: {fileID: 11400000, guid: a7b0359ab1f4f45e8b316100a1ded6db, type: 2}
+    dialogue: Oh, look who's talking! You're such a weakling, always hiding behind
+      your books. You make an easy target.
+  - speaker: {fileID: 11400000, guid: 33e14e9ea947149c1b6419a1b09d92bd, type: 2}
+    dialogue: That's not true. I have interests other than books, you know. And even
+      if I didn't, that doesn't give you the right to bully me.
+  - speaker: {fileID: 11400000, guid: a7b0359ab1f4f45e8b316100a1ded6db, type: 2}
+    dialogue: 'Ha! You''re just saying that because you know you can''t defend yourself.
+      Don''t believe? Come and fight me! '
