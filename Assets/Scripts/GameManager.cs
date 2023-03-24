@@ -102,7 +102,9 @@ public class GameManager : MonoBehaviour
     void Update(){
         if (levelName == "Level4")
         {
-            StartCoroutine(swapToEnd(6));
+            if (score >= 40){
+                StartCoroutine(swapToEnd(6));
+            }
         }
         if (GameOver){
             StartCoroutine(swapToLost(6));
