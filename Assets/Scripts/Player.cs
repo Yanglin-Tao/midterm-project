@@ -28,7 +28,10 @@ public class Player : MonoBehaviour
 
         float xScale = transform.localScale.x;
         if ((xSpeed < 0 && xScale >0) || (xSpeed > 0 && xScale < 1)){
-            transform.localScale *= new Vector2(-1, 1);
+            // get current localScale
+            Vector3 localScale = transform.localScale;
+            // flip x axis
+            transform.localScale = new Vector3(-xScale, localScale.y, localScale.z);
         }
 
         Animator.SetFloat("Speed", Mathf.Abs(xSpeed));
