@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: becac19cdb652423e86baeb5a0de9c2b, type: 3}
+  m_Name: Convo04
+  m_EditorClassIdentifier: 
+  allLines:
+  - speaker: {fileID: 11400000, guid: 3d01de5832e464d838073b0faa8f717e, type: 2}
+    dialogue: Hello there. I've come to take you to the other side.
+  - speaker: {fileID: 11400000, guid: 5c8f270fe64884621be8f1cec54dcc81, type: 2}
+    dialogue: Wait, what? You mean I'm going to die?
+  - speaker: {fileID: 11400000, guid: 3d01de5832e464d838073b0faa8f717e, type: 2}
+    dialogue: Yes, I'm afraid so. It's your time. Your life has come to an end.
+  - speaker: {fileID: 11400000, guid: 5c8f270fe64884621be8f1cec54dcc81, type: 2}
+    dialogue: But I'm not ready to go. I still have so much to do. I want to see
+      my grandchildren grow up, and I want to travel the world. I'm not ready to
+      leave yet.
+  - speaker: {fileID: 11400000, guid: 3d01de5832e464d838073b0faa8f717e, type: 2}
+    dialogue: You can't beat the Death Reaper. This is the way it is. Say goodbye
+      to your loved ones.
+  - speaker: {fileID: 11400000, guid: 5c8f270fe64884621be8f1cec54dcc81, type: 2}
+    dialogue: No, not yet. I'm weak and old, but I'm still taking my vitamins!
