@@ -691,7 +691,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6103693fef94b43b488e25073c77e391, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  collectPrefab: {fileID: 6206987179790340547, guid: 2ed2a4703f3bc429997ab4b40c00d3b9, type: 3}
+  collectPrefab: {fileID: 5274943894311018908, guid: 258f270dcd61b450da6c2ea8e30587bc, type: 3}
 --- !u!4 &243922222
 Transform:
   m_ObjectHideFlags: 0
@@ -4720,7 +4720,7 @@ AudioSource:
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
-  Loop: 1
+  Loop: 0
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
