@@ -7,6 +7,9 @@ TagManager:
   - ground
   - Enemy
   - Boundary
+  - Undefined
+  - Bully
+  - spike
   layers:
   - Default
   - TransparentFX

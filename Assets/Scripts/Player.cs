@@ -15,10 +15,12 @@ public class Player : MonoBehaviour
     private Rigidbody2D rb;
     private Animator Animator;
     private Collider2D _collider2D;
-
+    GameManager _gameManager;
+    
     void Start(){
         rb = GetComponent<Rigidbody2D>();
         Animator = GetComponent<Animator>();
+        _gameManager = GameObject.FindObjectOfType<GameManager>();
     }
 
     void FixedUpdate() {
@@ -27,16 +29,16 @@ public class Player : MonoBehaviour
         rb.velocity = new Vector2(xSpeed, rb.velocity.y);
 
         float xScale = transform.localScale.x;
-        if ((xSpeed < 0 && xScale >0) || (xSpeed > 0 && xScale < 1)){
+        if ((xSpeed < 0 && xScale > 0) || (xSpeed > 0 && xScale < 1)){
             // get current localScale
             Vector3 localScale = transform.localScale;
             // flip x axis
             transform.localScale = new Vector3(-xScale, localScale.y, localScale.z);
         }
-
         Animator.SetFloat("Speed", Mathf.Abs(xSpeed));
 
     }
+
 
     void Update(){
 
@@ -51,6 +53,26 @@ public class Player : MonoBehaviour
         if (transform.position.y < -10){
             Destroy(gameObject);
         }
+    }
+
+    void OnCollisionEnter2D(Collision2D collision)
+    {
+        print("this ran");
+        if (collision.gameObject.tag == "Bully")
+        {
+            _gameManager.MinusLife(3);
+        }
+        if (collision.gameObject.tag == "Tomato"){
+            _gameManager.MinusLife(1);
+        }
+        if (collision.gameObject.tag == "spike"){
+            _gameManager.MinusLife(3);
+        }
+
+        // if (collision .gameObject.tag == "ground"){
+        //     print("this ran");
+        //     isGrounded = true;
+        // }
     }
 
 

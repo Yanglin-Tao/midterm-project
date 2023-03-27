@@ -34,11 +34,11 @@ public class GameManager : MonoBehaviour
         scoreUI.text = "SCORE: " + score;
     }
 
-    public void MinusLife()
+    public void MinusLife(int amount)
     {
         if (life > 0)
         {
-            life -= 1;
+            life -= amount;
             lifeUI.text = "LIFE: " + life;
             if (life == 0){
                 GameOver = true;
@@ -46,11 +46,11 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    public void AddLife()
+    public void AddLife(int amount)
     {
         if (life > 0)
         {
-            life += 1;
+            life += amount;
             lifeUI.text = "LIFE: " + life;
         }
     }

@@ -47,7 +47,7 @@ public class Bully : MonoBehaviour
     void Update()
     {
         grounded = Physics2D.OverlapCircle(feet.position, .3f, WhatIsGround);
-        print(grounded);
+        // print(grounded);
         // Randomly jump based on a probability
         if (Random.value < jumpProbability && grounded)
         {
@@ -55,11 +55,12 @@ public class Bully : MonoBehaviour
         }
     }
 
-    void OnCollisionEnter2D(Collision2D collision)
-    {
-        if (collision.gameObject.tag == "Player")
-        {
-            Destroy(collision.gameObject);
-        }
-    }
+    // I made the collision in the play script
+    // void OnCollisionEnter2D(Collision2D collision)
+    // {
+    //     if (collision.gameObject.tag == "Player")
+    //     {
+    //         Destroy(collision.gameObject);
+    //     }
+    // }
 }
