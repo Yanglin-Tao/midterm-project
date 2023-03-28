@@ -28,6 +28,10 @@ public class GameManager : MonoBehaviour
         lifeUI.text = "LIFE: " + life;
     }
 
+    public float getHealth(){
+        return life;
+    }
+
     public void AddScore(int newScore)
     {
         score += newScore;
