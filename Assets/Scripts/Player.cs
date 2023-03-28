@@ -57,7 +57,6 @@ public class Player : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D collision)
     {
-        print("this ran");
         if (collision.gameObject.tag == "Bully")
         {
             _gameManager.MinusLife(3);
@@ -65,15 +64,35 @@ public class Player : MonoBehaviour
         if (collision.gameObject.tag == "Tomato"){
             _gameManager.MinusLife(1);
         }
-        if (collision.gameObject.tag == "spike"){
+        if (collision.gameObject.tag == "Spike"){
             _gameManager.MinusLife(3);
         }
 
-        // if (collision .gameObject.tag == "ground"){
-        //     print("this ran");
-        //     isGrounded = true;
-        // }
     }
+    void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.CompareTag("Spike"))
+        {
+            print("HII");
+            _gameManager.MinusLife(3);
+        }
+            
+    }
+
+    // void OnTriggerEnter(Collider other)
+    // {
+    //     if (other.CompareTag("Bully"))
+    //     {
+    //         _gameManager.MinusLife(3);
+    //     }
+    //     if (other.CompareTag("Tomato")){
+    //         _gameManager.MinusLife(1);
+    //     }
+    //     if (other.CompareTag("Spike")){
+    //         _gameManager.MinusLife(3);
+    //     }
+
+    // }
 
 
 }
