@@ -9,9 +9,9 @@ public class CollectibleSpawner : MonoBehaviour
     IEnumerator Start()
     {
         for (int i = 0; i < 2000; i++) {
-            Vector2 spawnPos = new Vector2(Random.Range(-15f, 15f), Random.Range(10, 20));
+            Vector2 spawnPos = new Vector2(Random.Range(-15f, 300f), Random.Range(10, 20));
             Instantiate(collectPrefab, spawnPos, Quaternion.identity);
-            yield return new WaitForSeconds(.8f);
+            yield return new WaitForSeconds(.5f);
         }
     }
 
