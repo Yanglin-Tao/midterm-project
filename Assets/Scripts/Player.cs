@@ -18,6 +18,8 @@ public class Player : MonoBehaviour
     private Collider2D _collider2D;
     public GameObject explosion;
     GameManager _gameManager;
+
+    private bool hasSword = false;
     
     void Start(){
         rb = GetComponent<Rigidbody2D>();
@@ -78,6 +80,19 @@ public class Player : MonoBehaviour
         if (collision.gameObject.tag == "Spike"){
             _gameManager.MinusLife(3);
         }
+        if (collision.gameObject.tag == "Sword"){
+            hasSword = true;
+            Destroy(collision.gameObject);
+        }
+        if (collision.gameObject.tag == "Reaper"){
+            if (hasSword){
+                Animator.SetBool("Attack", true);
+            }
+            else {
+                _gameManager.MinusLife(3);
+            }
+        }
+        
     }
 
     IEnumerator Death (int seconds) {

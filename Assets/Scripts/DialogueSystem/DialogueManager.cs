@@ -13,6 +13,7 @@ public class DialogueManager : MonoBehaviour
     private Conversation currentConvo;
     private static DialogueManager instance;
     private Coroutine typing;
+    // public GameManager _gameManager;
 
     private void Awake(){
         if(instance == null){
@@ -22,6 +23,10 @@ public class DialogueManager : MonoBehaviour
             Destroy(gameObject);
         }
     }
+
+    // void Start(){
+    //     _gameManager = GameObject.FindObjectOfType<GameManager>();
+    // }
 
     public static void StartConversation(Conversation convo){
         instance.currentIndex = 0;
@@ -37,6 +42,7 @@ public class DialogueManager : MonoBehaviour
         if (currentIndex > currentConvo.GetLength()){
             // Destroy(dialogueBox);
             dialogueBox.SetActive(false);
+            // _gameManager.ResumeGame();
             return;
         }
         
