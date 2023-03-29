@@ -8,10 +8,10 @@ public class CollectibleSpawner : MonoBehaviour
 
     IEnumerator Start()
     {
-        for (int i = 0; i < 2000; i++) {
-            Vector2 spawnPos = new Vector2(Random.Range(-15f, 300f), Random.Range(10, 20));
+        for (int i = 0; i < 4000; i++) {
+            Vector2 spawnPos = new Vector2(Random.Range(-30f, 300f), Random.Range(10, 15));
             Instantiate(collectPrefab, spawnPos, Quaternion.identity);
-            yield return new WaitForSeconds(.5f);
+            yield return new WaitForSeconds(.2f);
         }
     }
 
