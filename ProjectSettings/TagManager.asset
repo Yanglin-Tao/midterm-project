@@ -11,6 +11,7 @@ TagManager:
   - Spike
   - Reaper
   - Sword
+  - Powerup
   layers:
   - Default
   - TransparentFX
