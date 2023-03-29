@@ -16,6 +16,15 @@ public class GameManager : MonoBehaviour
 
     private bool GameOver = false;
 
+    // public void PauseGame ()
+    // {
+    //     Time.timeScale = 0;
+    // }
+    // public void ResumeGame ()
+    // {
+    //     Time.timeScale = 1;
+    // }
+
     private void Awake()
     {   
         Scene scene = SceneManager.GetActiveScene();
@@ -24,6 +33,7 @@ public class GameManager : MonoBehaviour
 
     void Start()
     {
+        // PauseGame();
         scoreUI.text = "SCORE: " + score;
         lifeUI.text = "LIFE: " + life;
     }

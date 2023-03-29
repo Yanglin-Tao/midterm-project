@@ -9,6 +9,8 @@ TagManager:
   - Boundary
   - Bully
   - Spike
+  - Reaper
+  - Sword
   layers:
   - Default
   - TransparentFX
