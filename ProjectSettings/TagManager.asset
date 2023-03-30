@@ -12,6 +12,7 @@ TagManager:
   - Reaper
   - Sword
   - Powerup
+  - Tomato
   layers:
   - Default
   - TransparentFX
