@@ -1641,6 +1641,8 @@ GameObject:
   - component: {fileID: 539326920}
   - component: {fileID: 539326919}
   - component: {fileID: 539326918}
+  - component: {fileID: 539326925}
+  - component: {fileID: 539326924}
   m_Layer: 0
   m_Name: Enemy (1)
   m_TagString: Reaper
@@ -1804,6 +1806,30 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &539326924
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 539326917}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 968198d3a35d744e1a577e9b1c2477cc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &539326925
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 539326917}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 40bce05d560244f37885d9ba3e7a533f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &622367587
 GameObject:
   m_ObjectHideFlags: 0
@@ -2373,6 +2399,8 @@ GameObject:
   - component: {fileID: 787775566}
   - component: {fileID: 787775565}
   - component: {fileID: 787775564}
+  - component: {fileID: 787775571}
+  - component: {fileID: 787775570}
   m_Layer: 0
   m_Name: Enemy (2)
   m_TagString: Reaper
@@ -2536,6 +2564,30 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &787775570
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 787775563}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 968198d3a35d744e1a577e9b1c2477cc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &787775571
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 787775563}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 40bce05d560244f37885d9ba3e7a533f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &823578648
 GameObject:
   m_ObjectHideFlags: 0
@@ -3050,7 +3102,6 @@ GameObject:
   - component: {fileID: 1027714203}
   - component: {fileID: 1027714202}
   - component: {fileID: 1027714201}
-  - component: {fileID: 1027714205}
   m_Layer: 0
   m_Name: virus_0 (1)
   m_TagString: Untagged
@@ -3156,18 +3207,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 23
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1027714205
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1027714200}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 40bce05d560244f37885d9ba3e7a533f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1035938872
 GameObject:
   m_ObjectHideFlags: 0
@@ -4590,6 +4629,7 @@ GameObject:
   - component: {fileID: 1367799950}
   - component: {fileID: 1367799951}
   - component: {fileID: 1367799952}
+  - component: {fileID: 1367799953}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Reaper
@@ -4763,6 +4803,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 968198d3a35d744e1a577e9b1c2477cc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1367799953
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1367799945}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 40bce05d560244f37885d9ba3e7a533f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1406149781

@@ -43,6 +43,7 @@ public class Player : MonoBehaviour
             Animator.SetFloat("Speed", Mathf.Abs(xSpeed));
         }
         Animator.SetFloat("Health", _gameManager.getHealth());
+        Animator.SetBool("Attack", false);
     }
 
 
@@ -87,6 +88,9 @@ public class Player : MonoBehaviour
         if (collision.gameObject.tag == "Reaper"){
             if (hasSword){
                 Animator.SetBool("Attack", true);
+                if (_gameManager.getScore() < 1){
+                    _gameManager.MinusLife(3);
+                }
             }
             else {
                 _gameManager.MinusLife(3);
