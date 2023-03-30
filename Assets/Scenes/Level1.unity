@@ -2487,7 +2487,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 452228408}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 136.13, y: -2.5, z: 0}
+  m_LocalPosition: {x: 112.24, y: -2.5, z: 0}
   m_LocalScale: {x: 0.7, y: 0.6, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -2508,8 +2508,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 3
-  maxXPos: 65
-  minXPos: 55
+  maxXPos: 135
+  minXPos: 112
   jumpProbability: 0.0001
   jumpForce: 20
   WhatIsGround:
