@@ -12,6 +12,9 @@ TagManager:
   - Reaper
   - Sword
   - Powerup
+  - Tomato
+  - Billman
+  - Level3Boss
   layers:
   - Default
   - TransparentFX
