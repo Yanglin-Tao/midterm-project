@@ -4,7 +4,9 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-
+    public AudioClip jumpSound;
+    public AudioClip hitSound;
+    public AudioClip deathSound;
     public float speed = 6;
     public float jumpForce = 300;
 
@@ -18,13 +20,15 @@ public class Player : MonoBehaviour
     private Collider2D _collider2D;
     public GameObject explosion;
     GameManager _gameManager;
-
     private bool hasSword = false;
+    AudioSource _audioSource;
+
 
     void Start(){
         rb = GetComponent<Rigidbody2D>();
         Animator = GetComponent<Animator>();
         _gameManager = GameObject.FindObjectOfType<GameManager>();
+        _audioSource = GetComponent<AudioSource>();
     }
 
     void FixedUpdate() {
@@ -53,6 +57,7 @@ public class Player : MonoBehaviour
             if (Input.GetButtonDown("Jump") && isGrounded){
                 rb.AddForce(new Vector2(0, jumpForce));
                 Animator.SetBool("Jump", !isGrounded);
+                _audioSource.PlayOneShot(jumpSound);
             }
             Animator.SetBool("Jump", !isGrounded);
 
@@ -80,9 +85,11 @@ public class Player : MonoBehaviour
         }
         if (collision.gameObject.tag == "Billman"){
             _gameManager.MinusLife(1);
+            _audioSource.PlayOneShot(hitSound);
         }
         if (collision.gameObject.tag == "Level3Boss"){
             _gameManager.MinusLife(1);
+            _audioSource.PlayOneShot(hitSound);
         }
         if (collision.gameObject.tag == "Spike"){
             _gameManager.MinusLife(3);
@@ -106,6 +113,7 @@ public class Player : MonoBehaviour
     }
 
     IEnumerator Death (int seconds) {
+        _audioSource.PlayOneShot(deathSound);
         int counter = seconds;
         yield return new WaitForSeconds(seconds);
         Destroy(gameObject);
