@@ -12,10 +12,10 @@ EditorBuildSettings:
     path: Assets/Scenes/FailEnd.unity
     guid: fbb44647cc3554783a264f121f50bad4
   - enabled: 1
-    path: Assets/Scenes/Level2.unity
+    path: Assets/Scenes/Level3.unity
     guid: 552de99610c674eb3b53944a266c2d78
   - enabled: 1
-    path: Assets/Scenes/Level3.unity
+    path: Assets/Scenes/Level2.unity
     guid: d9ee014fcf3b6416398649ac3e9c9e44
   - enabled: 1
     path: Assets/Scenes/Level4.unity

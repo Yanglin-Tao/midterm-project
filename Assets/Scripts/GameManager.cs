@@ -26,7 +26,7 @@ public class GameManager : MonoBehaviour
     // }
 
     private void Awake()
-    {   
+    {
         Scene scene = SceneManager.GetActiveScene();
         levelName = scene.name;
     }
@@ -90,24 +90,24 @@ public class GameManager : MonoBehaviour
         {
         if (score >= 10)
         {
-            Destroy(gameObject); 
+            Destroy(gameObject);
             SceneManager.LoadScene("Level2");
         }
         }
     if (levelName == "Level2")
         {
-        if (score >= 20)
+        if (score >= 100)
         {
-            Destroy(gameObject); 
+            Destroy(gameObject);
             SceneManager.LoadScene("Level3");
         }
         }
 
     if (levelName == "Level3")
         {
-        if (score >= 20)
+        if (score >= 100)
         {
-            Destroy(gameObject); 
+            Destroy(gameObject);
             SceneManager.LoadScene("Level4");
         }
         }

@@ -20,7 +20,7 @@ public class Player : MonoBehaviour
     GameManager _gameManager;
 
     private bool hasSword = false;
-    
+
     void Start(){
         rb = GetComponent<Rigidbody2D>();
         Animator = GetComponent<Animator>();
@@ -58,7 +58,7 @@ public class Player : MonoBehaviour
 
             // player dies if he falls off the map
             if (transform.position.y < -10){
-                Destroy(gameObject);
+                _gameManager.MinusLife(3);
             }
         }
         else{
@@ -76,6 +76,12 @@ public class Player : MonoBehaviour
             _gameManager.MinusLife(3);
         }
         if (collision.gameObject.tag == "Tomato"){
+            _gameManager.MinusLife(1);
+        }
+        if (collision.gameObject.tag == "Billman"){
+            _gameManager.MinusLife(1);
+        }
+        if (collision.gameObject.tag == "Level3Boss"){
             _gameManager.MinusLife(1);
         }
         if (collision.gameObject.tag == "Spike"){
@@ -96,7 +102,7 @@ public class Player : MonoBehaviour
                 _gameManager.MinusLife(3);
             }
         }
-        
+
     }
 
     IEnumerator Death (int seconds) {
