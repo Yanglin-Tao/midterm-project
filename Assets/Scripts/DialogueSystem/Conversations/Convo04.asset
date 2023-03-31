@@ -25,6 +25,8 @@ MonoBehaviour:
       leave yet.
   - speaker: {fileID: 11400000, guid: 3d01de5832e464d838073b0faa8f717e, type: 2}
     dialogue: You can't beat the Death Reaper. This is the way it is. Say goodbye
-      to your loved ones.
+      to your loved ones. I'm taking your life RIGHT NOW.
   - speaker: {fileID: 11400000, guid: 5c8f270fe64884621be8f1cec54dcc81, type: 2}
-    dialogue: No, not yet. I'm weak and old, but I'm still taking my vitamins!
+    dialogue: 'No, not yet. I''m weak and old, but I''m still taking my vitamins!
+      I can not give up hope. There must be some way to beat the Death Reaper as
+      long as I have the most powerful sword in the world. But how can I find it? '
