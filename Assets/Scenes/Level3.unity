@@ -5717,12 +5717,13 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: 'Now, you will navigate David through the middle age crisis and avoid being
-    charged by the ruthless bill man. Use LEFT and RIGHT keys to move the player
-    and SPACE to jump. Help David earn as much money as you can, as he has always
-    wanted to afford his own apartment. The bill man sends bill letters at him, and
-    David must fight back using a gun that can shoot coins at his enemy.
+    charged by the ruthless bill man. Help David earn as much money as you can, as
+    he has always wanted to afford his own apartment. The bill man sends bill letters
+    at him, and David must fight back using a gun that can shoot coins at his enemy.
 
-'
+
+    Hint:
+    Get score to 10, or get to portal at the end.'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}

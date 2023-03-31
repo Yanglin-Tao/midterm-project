@@ -5281,12 +5281,14 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Now, you will navigate David through office life and avoid being insulted
-    by his mean boss. Use LEFT and RIGHT keys to move the player and SPACE to jump.
-    Help David receive as many kudos as you can, as they are very important for him
-    to restore confidence from his co-workers and families. The mean boss throws
-    curse words at him, and David must fight back using gun that can shoot paper
-    clips at his enemy.
+  m_text: 'Now, you will navigate David through office life. Help David receive as
+    many kudos as you can, as they are very important for him to restore confidence.
+    The mean boss throws curse words at him, and David must fight back using gun
+    that can shoot paper clips at his enemy.
+
+
+    Hint: Get score to 10, or get
+    to 5 and step on your boss.
 
 '
   m_isRightToLeft: 0
