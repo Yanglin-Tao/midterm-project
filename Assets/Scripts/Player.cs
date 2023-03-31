@@ -91,7 +91,7 @@ public class Player : MonoBehaviour
             _gameManager.MinusLife(1);
             _audioSource.PlayOneShot(hitSound);
         }
-        if (collision.gameObject.tag == "Level3Boss"){
+        if (collision.gameObject.tag == "Level2Boss"){
             _gameManager.MinusLife(1);
             _audioSource.PlayOneShot(hitSound);
         }
