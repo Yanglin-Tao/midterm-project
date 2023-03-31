@@ -4813,11 +4813,14 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Now, you will navigate David through school life and avoid being attacked
-    by the bully. Use LEFT and RIGHT keys to move the player and SPACE to jump. Help
-    David eat meals as they help David grow and gain strength. Be aware of the spikes,
-    as they can be dangerous! The bad bully throws tomatoes at you, and these can
-    get very nasty. Avoid the bully as much as you can.
+  m_text: 'Now, you will navigate David through school life. Use LEFT and RIGHT keys
+    to move the player and SPACE to jump. Help David eat meals as they help David
+    grow and gain strength. Be aware of the spikes! The bad bully throws tomatoes
+    at you, and these can get very nasty. Avoid the bully as much as you can.
+
+
+    Hint:
+    Get score to 10.
 
 '
   m_isRightToLeft: 0

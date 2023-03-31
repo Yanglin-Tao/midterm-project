@@ -4349,6 +4349,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   collectPrefab: {fileID: 6206987179790340547, guid: 2ed2a4703f3bc429997ab4b40c00d3b9, type: 3}
+  _gameManager: {fileID: 0}
 --- !u!4 &1129283187
 Transform:
   m_ObjectHideFlags: 0
@@ -6658,11 +6659,13 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: 'Now, you will navigate David through the elderly and avoid being killed
-    by the Death Reaper. Use LEFT and RIGHT keys to move the player and SPACE to
-    jump. Help David take vitamins, as they are important health boosters. The death
-    reaper is very merciless and will immediately put David to death if he does not
-    have a weapon to protect himself. Help David find the sword that can effectly
-    kill the Death Reaper. Good luck, you are almost there!
+    by the Death Reaper. Help David take vitamins, as they are important health boosters.
+    The death reaper is very merciless and will kill David if he does not have a
+    weapon to protect himself. Help David find the sword that can effectly kill the
+    Death Reaper.
+
+
+    Hint: Get score to 10.
 
 '
   m_isRightToLeft: 0
@@ -8158,6 +8161,7 @@ MonoBehaviour:
   navButtonText: {fileID: 1866638126}
   speakerSprite: {fileID: 710157637}
   dialogueBox: {fileID: 1989524247}
+  _gameManager: {fileID: 0}
 --- !u!1 &1995658142
 GameObject:
   m_ObjectHideFlags: 0
