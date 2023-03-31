@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class Level2Portal : MonoBehaviour
+public class Level3Portal : MonoBehaviour
 {
     // Update is called once per frame
     void Update()
@@ -15,7 +15,7 @@ public class Level2Portal : MonoBehaviour
     void OnCollisionEnter2D(Collision2D collision){
         if (collision.gameObject.tag == "Player"){
             GameManager _gameManager = GameObject.FindObjectOfType<GameManager>();
-            SceneManager.LoadScene("Level3");
+            SceneManager.LoadScene("Level4");
         }
     }
 }

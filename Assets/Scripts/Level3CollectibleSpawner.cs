@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Level2CollectibleSpawner : MonoBehaviour
+public class Level3CollectibleSpawner : MonoBehaviour
 {
     public GameObject collectPrefab;
 
