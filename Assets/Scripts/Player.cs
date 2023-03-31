@@ -39,7 +39,7 @@ public class Player : MonoBehaviour
             rb.velocity = new Vector2(xSpeed, rb.velocity.y);
 
             float xScale = transform.localScale.x;
-            if ((xSpeed < 0 && xScale > 0) || (xSpeed > 0 && xScale < 1)){
+            if ((xSpeed < 0 && xScale > 0) || (xSpeed > 0 && xScale < 0)){
                 // get current localScale
                 Vector3 localScale = transform.localScale;
                 // flip x axis
