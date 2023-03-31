@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class Level3Boss : MonoBehaviour
+public class Level2Boss : MonoBehaviour
 {
     private Animator Animator;
     GameManager _gameManager;

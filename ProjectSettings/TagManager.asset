@@ -14,9 +14,9 @@ TagManager:
   - Powerup
   - Tomato
   - Billman
-  - Level3Boss
   - Collectible
   - Curse
+  - Level2Boss
   layers:
   - Default
   - TransparentFX

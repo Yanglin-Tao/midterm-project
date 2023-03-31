@@ -64,7 +64,7 @@ public class GameManager : MonoBehaviour
         {
             life -= amount;
             lifeUI.text = "LIFE: " + life;
-            if (life == 0){
+            if (life < 0){
                 GameOver = true;
             }
         }
@@ -114,6 +114,10 @@ public class GameManager : MonoBehaviour
         }
     if (levelName == "Level2")
         {
+            // This value is intended to be 100
+            // For entering Level3
+            // 1. get to 10 score
+            // 2. get to 5 and step on the boss
         if (score >= 10)
         {
             Destroy(gameObject);
@@ -123,6 +127,10 @@ public class GameManager : MonoBehaviour
 
     if (levelName == "Level3")
         {
+            // This value is intended to be 100
+            // For entering Level4
+            // 1. get to 10 score
+            // 2. get to the final portal
         if (score >= 10)
         {
             Destroy(gameObject);

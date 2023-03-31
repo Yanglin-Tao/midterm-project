@@ -6371,7 +6371,7 @@ GameObject:
   - component: {fileID: 1886433183}
   m_Layer: 0
   m_Name: Boss
-  m_TagString: Level3Boss
+  m_TagString: Level2Boss
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6524,11 +6524,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c8dbbb60f768f405f9586c5e6d6ef605, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  neededScore: 20
+  neededScore: 5
   speed: 5
   maxXPos: 150
   minXPos: 120
-  jumpProbability: 0.0005
+  jumpProbability: 0.0003
   jumpForce: 200
   feet: {fileID: 1980228695}
   WhatIsGround:
