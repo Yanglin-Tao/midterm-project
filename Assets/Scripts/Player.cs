@@ -69,10 +69,10 @@ public class Player : MonoBehaviour
         }
         else{
             StartCoroutine(Death(2));
-            // if (flag){
+            if (flag){
             Instantiate(explosion, transform.position, Quaternion.identity);
-            //    flag = false;
-            //}
+               flag = false;
+            }
         }
         Animator.SetFloat("Health", _gameManager.getHealth());
     }
@@ -82,6 +82,9 @@ public class Player : MonoBehaviour
             _gameManager.MinusLife(3);
         }
         if (collision.gameObject.tag == "Tomato"){
+            _gameManager.MinusLife(1);
+        }
+        if (collision.gameObject.tag == "Curse"){
             _gameManager.MinusLife(1);
         }
         if (collision.gameObject.tag == "Billman"){
