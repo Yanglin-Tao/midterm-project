@@ -114,7 +114,7 @@ public class GameManager : MonoBehaviour
         }
     if (levelName == "Level2")
         {
-        if (score >= 100)
+        if (score >= 10)
         {
             Destroy(gameObject);
             SceneManager.LoadScene("Level3");
@@ -123,7 +123,7 @@ public class GameManager : MonoBehaviour
 
     if (levelName == "Level3")
         {
-        if (score >= 100)
+        if (score >= 10)
         {
             Destroy(gameObject);
             SceneManager.LoadScene("Level4");
@@ -134,7 +134,7 @@ public class GameManager : MonoBehaviour
     void Update(){
         if (levelName == "Level4")
         {
-            if (score >= 40){
+            if (score >= 10){
                 StartCoroutine(swapToEnd(6));
             }
         }
