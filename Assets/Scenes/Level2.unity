@@ -1569,7 +1569,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 291159979}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 8.6, y: 11.3, z: -9.91}
+  m_LocalPosition: {x: -21.97, y: 20.55, z: -9.91}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3189,7 +3189,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 718612167}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 8.6, y: 11.3, z: 0.09}
+  m_LocalPosition: {x: -21.97, y: 20.55, z: 0.09}
   m_LocalScale: {x: 1.5, y: 1.5, z: 1.5}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -3232,6 +3232,7 @@ MonoBehaviour:
   jumpSound: {fileID: 8300000, guid: e356ec3077bb44a4a8c907591495f501, type: 3}
   hitSound: {fileID: 8300000, guid: ed71ebe58728649ce87af13e0bfa0f78, type: 3}
   deathSound: {fileID: 8300000, guid: bc2e49a34b2ba4f0b87dd54e8419e19a, type: 3}
+  collectSound: {fileID: 8300000, guid: 9f5abcdb12ae54b6492758eb48b5b671, type: 3}
   speed: 6
   jumpForce: 1000
   ground:
@@ -3678,7 +3679,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 755656344}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 8.6, y: 11.3, z: -9.91}
+  m_LocalPosition: {x: -21.97, y: 20.55, z: -9.91}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
