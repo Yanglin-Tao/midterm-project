@@ -6,10 +6,13 @@ public class EnemyDeath : MonoBehaviour
 {
     private Animator Animator;
     GameManager _gameManager;
+    public AudioClip deathSound;
+    AudioSource _audioSource;
 
     void Start(){
         Animator = GetComponent<Animator>();
         _gameManager = GameObject.FindObjectOfType<GameManager>();
+        _audioSource = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -22,6 +25,7 @@ public class EnemyDeath : MonoBehaviour
         if (collision.gameObject.tag == "Player"){
             if (_gameManager.getScore() >= 1){
                 Animator.SetBool("Death", true);
+                _audioSource.PlayOneShot(deathSound);
                 StartCoroutine(Death(2));
             }
         }
