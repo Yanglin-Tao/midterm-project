@@ -30,4 +30,5 @@ MonoBehaviour:
       and sacrificing my personal time. And yet, I still feel like I'm not being
       given a fair chance to succeed.
   - speaker: {fileID: 11400000, guid: 6bfb30bc6c13e4be3a23c21975109649, type: 2}
-    dialogue: Screw you. I'm the ONLY boss here.
+    dialogue: Remember I'm the ONLY boss here. I won't be kind anymore if you screw
+      things up.

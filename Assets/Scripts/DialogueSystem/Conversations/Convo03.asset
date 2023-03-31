@@ -14,19 +14,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   allLines:
   - speaker: {fileID: 11400000, guid: 15253d1f520db44c28cf0a1540e959bb, type: 2}
-    dialogue: Hello, Mr. Bill Man. I'm here to talk to you about the rent. I'm having
+    dialogue: Hello, Mr. Bill Man. I'm here to talk to you about the bill. I'm having
       a bit of trouble making ends meet this month, and I was wondering if we could
       work out a payment plan?
   - speaker: {fileID: 11400000, guid: b7e18b018ff064cda916fd90bcd5eb1e, type: 2}
     dialogue: Oh, so now you're having trouble paying the bill? That's just great.
-      You know, I'm sick and tired of your excuses. You're always late with the rent
+      You know, I'm sick and tired of your excuses. You're always late with the bill
       and you're always causing problems.
   - speaker: {fileID: 11400000, guid: 15253d1f520db44c28cf0a1540e959bb, type: 2}
     dialogue: I know, and I'm sorry. I'm doing everything I can to make ends meet.
       I have a family to feed and it's not easy these days.
   - speaker: {fileID: 11400000, guid: b7e18b018ff064cda916fd90bcd5eb1e, type: 2}
-    dialogue: Well, that's not my problem. You signed a lease and you agreed to pay
-      the rent on time. I don't have to cut you any slack.
+    dialogue: Well, that's not my problem. You HAVE to pay your bill on time. I don't
+      have to cut you any slack.
   - speaker: {fileID: 11400000, guid: 15253d1f520db44c28cf0a1540e959bb, type: 2}
     dialogue: I understand that, but I'm not asking for anything unreasonable. I
       just need a little more time to come up with the money.
