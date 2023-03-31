@@ -17,6 +17,7 @@ TagManager:
   - Collectible
   - Curse
   - Level2Boss
+  - Proceed
   layers:
   - Default
   - TransparentFX

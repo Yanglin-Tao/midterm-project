@@ -123,6 +123,11 @@ public class Player : MonoBehaviour
             Destroy(other.gameObject);
             _gameManager.AddScore(1);
         }
+        if(other.CompareTag("Proceed")){
+            _audioSource.PlayOneShot(collectSound);
+            Destroy(other.gameObject);
+            _gameManager.AddScore(10);
+        }
     }
 
     IEnumerator Death (int seconds) {
