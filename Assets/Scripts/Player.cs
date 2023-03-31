@@ -97,6 +97,7 @@ public class Player : MonoBehaviour
         }
         if (collision.gameObject.tag == "Sword"){
             hasSword = true;
+            Animator.SetBool("hasSword", hasSword);
             Destroy(collision.gameObject);
             _gameManager.setSword(true);
         }
