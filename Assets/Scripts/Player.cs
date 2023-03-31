@@ -84,6 +84,9 @@ public class Player : MonoBehaviour
         if (collision.gameObject.tag == "Tomato"){
             _gameManager.MinusLife(1);
         }
+        if (collision.gameObject.tag == "Curse"){
+            _gameManager.MinusLife(1);
+        }
         if (collision.gameObject.tag == "Billman"){
             _gameManager.MinusLife(1);
             _audioSource.PlayOneShot(hitSound);

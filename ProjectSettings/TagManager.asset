@@ -16,6 +16,7 @@ TagManager:
   - Billman
   - Level3Boss
   - Collectible
+  - Curse
   layers:
   - Default
   - TransparentFX
