@@ -15,6 +15,7 @@ public class GameManager : MonoBehaviour
     public TMPro.TextMeshProUGUI lifeUI;
 
     private bool GameOver = false;
+    private bool hasSword = false;
 
     // public void PauseGame ()
     // {
@@ -75,6 +76,14 @@ public class GameManager : MonoBehaviour
 
     public int getLife(){
         return life;
+    }
+
+    public bool getSword(){
+        return hasSword;
+    }
+
+    public void setSword(bool flag){
+        hasSword = flag;
     }
 
     void screenChecker()

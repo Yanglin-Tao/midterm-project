@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 7097187835966351260}
   - component: {fileID: 1942708112408657871}
   - component: {fileID: -161755688946286621}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: meal
   m_TagString: Collectible
   m_Icon: {fileID: 0}
@@ -147,7 +147,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d300e06fbf2174664a892234e525d99b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  collectSound: {fileID: 8300000, guid: 9f5abcdb12ae54b6492758eb48b5b671, type: 3}
   score: 1
 --- !u!82 &-161755688946286621
 AudioSource:

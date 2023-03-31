@@ -98,6 +98,7 @@ public class Player : MonoBehaviour
         if (collision.gameObject.tag == "Sword"){
             hasSword = true;
             Destroy(collision.gameObject);
+            _gameManager.setSword(true);
         }
         if (collision.gameObject.tag == "Reaper"){
             if (hasSword){
@@ -110,12 +111,14 @@ public class Player : MonoBehaviour
                 _gameManager.MinusLife(3);
             }
         }
-        if (collision.gameObject.tag == "Collectible"){
+    }
+
+    private void OnTriggerEnter2D(Collider2D other) {
+        if(other.CompareTag("Collectible")){
             _audioSource.PlayOneShot(collectSound);
-            Destroy(gameObject);
+            Destroy(other.gameObject);
             _gameManager.AddScore(1);
         }
-
     }
 
     IEnumerator Death (int seconds) {
