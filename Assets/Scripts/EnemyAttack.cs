@@ -6,10 +6,13 @@ public class EnemyAttack : MonoBehaviour
 {
     private Animator Animator;
     GameManager _gameManager;
+    public AudioClip attackSound;
+    AudioSource _audioSource;
 
     void Start(){
         Animator = GetComponent<Animator>();
         _gameManager = GameObject.FindObjectOfType<GameManager>();
+        _audioSource = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -22,6 +25,7 @@ public class EnemyAttack : MonoBehaviour
         if (collision.gameObject.tag == "Player"){
             if (_gameManager.getScore() < 1){
                 Animator.SetBool("Attack", true);
+                _audioSource.PlayOneShot(attackSound);
             }
         }
     }

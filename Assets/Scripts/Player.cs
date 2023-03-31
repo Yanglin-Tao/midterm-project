@@ -7,6 +7,7 @@ public class Player : MonoBehaviour
     public AudioClip jumpSound;
     public AudioClip hitSound;
     public AudioClip deathSound;
+    public AudioClip collectSound;
     public float speed = 6;
     public float jumpForce = 300;
 
@@ -108,6 +109,11 @@ public class Player : MonoBehaviour
             else {
                 _gameManager.MinusLife(3);
             }
+        }
+        if (collision.gameObject.tag == "Collectible"){
+            _audioSource.PlayOneShot(collectSound);
+            Destroy(gameObject);
+            _gameManager.AddScore(1);
         }
 
     }
