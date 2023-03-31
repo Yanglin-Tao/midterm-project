@@ -3242,6 +3242,7 @@ MonoBehaviour:
   jumpSound: {fileID: 8300000, guid: 4d3f444275d6c4d88bb0b613af732369, type: 3}
   hitSound: {fileID: 8300000, guid: ed71ebe58728649ce87af13e0bfa0f78, type: 3}
   deathSound: {fileID: 8300000, guid: bc2e49a34b2ba4f0b87dd54e8419e19a, type: 3}
+  collectSound: {fileID: 8300000, guid: 9f5abcdb12ae54b6492758eb48b5b671, type: 3}
   speed: 6
   jumpForce: 1000
   ground:
