@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 8972784037319015931}
   - component: {fileID: 8508028596605726326}
   - component: {fileID: 1095317890268201078}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: money
   m_TagString: Collectible
   m_Icon: {fileID: 0}
@@ -148,7 +148,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d300e06fbf2174664a892234e525d99b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  collectSound: {fileID: 8300000, guid: 9f5abcdb12ae54b6492758eb48b5b671, type: 3}
   score: 1
 --- !u!114 &8508028596605726326
 MonoBehaviour:

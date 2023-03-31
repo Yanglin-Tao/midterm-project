@@ -23,7 +23,7 @@ public class EnemyDeath : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D collision){
         if (collision.gameObject.tag == "Player"){
-            if (_gameManager.getScore() >= 1){
+            if (_gameManager.getScore() >= 1 && _gameManager.getSword()){
                 Animator.SetBool("Death", true);
                 _audioSource.PlayOneShot(deathSound);
                 StartCoroutine(Death(2));

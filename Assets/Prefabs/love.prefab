@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: -5796166233351683878}
   - component: {fileID: -7219409344602412536}
   - component: {fileID: -959524102847292723}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: love
   m_TagString: Collectible
   m_Icon: {fileID: 0}
@@ -148,7 +148,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d300e06fbf2174664a892234e525d99b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  collectSound: {fileID: 8300000, guid: 9f5abcdb12ae54b6492758eb48b5b671, type: 3}
   score: 1
 --- !u!114 &-7219409344602412536
 MonoBehaviour:
