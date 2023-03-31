@@ -16,6 +16,7 @@ public class GameManager : MonoBehaviour
 
     private bool GameOver = false;
     private bool hasSword = false;
+    private bool spawn = false;
 
     // public void PauseGame ()
     // {
@@ -37,6 +38,14 @@ public class GameManager : MonoBehaviour
         // PauseGame();
         scoreUI.text = "SCORE: " + score;
         lifeUI.text = "LIFE: " + life;
+    }
+
+    public void setSpawn(bool flag){
+        spawn = flag;
+    }
+
+    public bool getSpawn(){
+        return spawn;
     }
 
     public float getHealth(){
