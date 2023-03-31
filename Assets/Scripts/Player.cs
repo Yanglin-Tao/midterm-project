@@ -13,7 +13,7 @@ public class Player : MonoBehaviour
 
     public LayerMask ground;
     bool isGrounded = false;
-    bool flag = true;
+    // bool flag = true;
     public Transform feet;
 
     private Rigidbody2D rb;
