@@ -17,6 +17,7 @@ public class GameManager : MonoBehaviour
     private bool GameOver = false;
     private bool hasSword = false;
     private bool spawn = false;
+    private bool enemyKilled = false;
 
     // public void PauseGame ()
     // {
@@ -106,13 +107,13 @@ public class GameManager : MonoBehaviour
 
     if (levelName == "Level1")
         {
-        if (score >= 10)
+        if (score >= 10 && enemyKilled)
         {
             Destroy(gameObject);
             SceneManager.LoadScene("Level2");
         }
         }
-    if (levelName == "Level2")
+    if (levelName == "Level2" && enemyKilled)
         {
             // This value is intended to be 100
             // For entering Level3
@@ -125,7 +126,7 @@ public class GameManager : MonoBehaviour
         }
         }
 
-    if (levelName == "Level3")
+    if (levelName == "Level3" && enemyKilled)
         {
             // This value is intended to be 100
             // For entering Level4
@@ -142,7 +143,7 @@ public class GameManager : MonoBehaviour
     void Update(){
         if (levelName == "Level4")
         {
-            if (score >= 10){
+            if (score >= 10 && enemyKilled){
                 StartCoroutine(swapToEnd(6));
             }
         }
