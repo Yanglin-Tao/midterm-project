@@ -49,6 +49,10 @@ public class GameManager : MonoBehaviour
         return spawn;
     }
 
+    public void setEnemyKilled(bool flag){
+        enemyKilled = flag;
+    }
+
     public float getHealth(){
         return life;
     }

@@ -26,6 +26,7 @@ public class EnemyDeath : MonoBehaviour
             if (_gameManager.getScore() >= 1 && _gameManager.getSword()){
                 Animator.SetBool("Death", true);
                 _audioSource.PlayOneShot(deathSound);
+                _gameManager.setEnemyKilled(true);
                 StartCoroutine(Death(2));
             }
         }
