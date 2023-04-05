@@ -114,32 +114,32 @@ public class GameManager : MonoBehaviour
         if (score >= 10 && enemyKilled)
         {
             Destroy(gameObject);
-            SceneManager.LoadScene("Level2");
+            SceneManager.LoadScene("Level1.5");
         }
         }
-    if (levelName == "Level2" && enemyKilled)
+    if (levelName == "Level2")
         {
             // This value is intended to be 100
             // For entering Level3
             // 1. get to 10 score
             // 2. get to 5 and step on the boss
-        if (score >= 10)
+        if (score >= 10 && enemyKilled)
         {
             Destroy(gameObject);
-            SceneManager.LoadScene("Level3");
+            SceneManager.LoadScene("Level2.5");
         }
         }
 
-    if (levelName == "Level3" && enemyKilled)
+    if (levelName == "Level3")
         {
             // This value is intended to be 100
             // For entering Level4
             // 1. get to 10 score
             // 2. get to the final portal
-        if (score >= 10)
+        if (score >= 10 && enemyKilled)
         {
             Destroy(gameObject);
-            SceneManager.LoadScene("Level4");
+            SceneManager.LoadScene("Level3.5");
         }
         }
     }

@@ -2,6 +2,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using System.Collections;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class DialogueManager : MonoBehaviour
 {
@@ -15,7 +16,12 @@ public class DialogueManager : MonoBehaviour
     private Coroutine typing;
     public GameManager _gameManager;
 
+    string levelName;
+
     private void Awake(){
+        Scene scene = SceneManager.GetActiveScene();
+        levelName = scene.name;
+        
         if(instance == null){
             instance = this;
         }
@@ -40,9 +46,21 @@ public class DialogueManager : MonoBehaviour
     public void ReadNext(){
         if (currentIndex > currentConvo.GetLength()){
             // Destroy(dialogueBox);
-            dialogueBox.SetActive(false);
+            // dialogueBox.SetActive(false);
             // _gameManager.ResumeGame();
-            _gameManager.setSpawn(true);
+            // _gameManager.setSpawn(true);
+            if (levelName == "Level0.5"){
+                SceneManager.LoadScene("Level1");
+            } 
+            else if (levelName == "Level1.5"){
+                SceneManager.LoadScene("Level2");
+            }
+            else if (levelName == "Level2.5"){
+                SceneManager.LoadScene("Level3");
+            }
+            else if (levelName == "Level3.5"){
+                SceneManager.LoadScene("Level4");
+            }
             return;
         }
         

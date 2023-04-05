@@ -4413,7 +4413,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1099661765
 RectTransform:
   m_ObjectHideFlags: 0
@@ -4525,6 +4525,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   collectPrefab: {fileID: 8457821590988754308, guid: c49b6df30e4664c1d84458f1abdec25b, type: 3}
   _gameManager: {fileID: 0}
+  minSpawnPositionX: -30
+  maxSpawnPositionX: 300
 --- !u!4 &1148251002
 Transform:
   m_ObjectHideFlags: 0
@@ -6678,7 +6680,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1933915710
 MonoBehaviour:
   m_ObjectHideFlags: 0
