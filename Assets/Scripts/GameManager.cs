@@ -16,7 +16,7 @@ public class GameManager : MonoBehaviour
 
     private bool GameOver = false;
     private bool hasSword = false;
-    private bool spawn = false;
+    // private bool spawn = false;
     private bool enemyKilled = false;
 
     // public void PauseGame ()
@@ -34,6 +34,10 @@ public class GameManager : MonoBehaviour
         levelName = scene.name;
     }
 
+    public string getCurrentLevel(){
+        return levelName;
+    }
+
     void Start()
     {
         // PauseGame();
@@ -41,13 +45,13 @@ public class GameManager : MonoBehaviour
         lifeUI.text = "LIFE: " + life;
     }
 
-    public void setSpawn(bool flag){
-        spawn = flag;
-    }
+    // public void setSpawn(bool flag){
+    //     spawn = flag;
+    // }
 
-    public bool getSpawn(){
-        return spawn;
-    }
+    // public bool getSpawn(){
+    //     return spawn;
+    // }
 
     public void setEnemyKilled(bool flag){
         enemyKilled = flag;
