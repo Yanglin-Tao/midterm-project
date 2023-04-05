@@ -55,12 +55,4 @@ public class Bully : MonoBehaviour
         }
     }
 
-    // I made the collision in the play script
-    // void OnCollisionEnter2D(Collision2D collision)
-    // {
-    //     if (collision.gameObject.tag == "Player")
-    //     {
-    //         Destroy(collision.gameObject);
-    //     }
-    // }
 }

@@ -125,12 +125,8 @@ public class Player : MonoBehaviour
         if(other.CompareTag("Collectible")){
             _audioSource.PlayOneShot(collectSound);
             Destroy(other.gameObject);
+            print("This ran");
             _gameManager.AddScore(1);
-        }
-        if(other.CompareTag("Proceed")){
-            _audioSource.PlayOneShot(collectSound);
-            Destroy(other.gameObject);
-            _gameManager.AddScore(10);
         }
     }
 

@@ -4,12 +4,12 @@ using UnityEngine;
 
 public class Collectible : MonoBehaviour
 {
-    int speed = 10;
+    int speed;
     Rigidbody2D _rigidbody2D;
     GameManager _gameManager;
     // public AudioClip collectSound;
-    public int score = 1;
     // AudioSource _audioSource;
+    public GameObject explosion;
 
     void Start()
     {
@@ -21,14 +21,12 @@ public class Collectible : MonoBehaviour
     }
 
     private void OnTriggerEnter2D(Collider2D other) {
-        if(other.CompareTag("Boundary")){
+        if(other.CompareTag("Player")){
+            Instantiate(explosion, transform.position, Quaternion.identity);
             Destroy(gameObject);
         }
 
         // if(other.CompareTag("Player")){
-        //     _audioSource.PlayOneShot(collectSound);
-        //     Destroy(gameObject);
-        //     _gameManager.AddScore(score);
-        // }
+
     }
 }
