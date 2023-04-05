@@ -16,7 +16,7 @@ public class GameManager : MonoBehaviour
 
     private bool GameOver = false;
     private bool hasSword = false;
-    private bool spawn = false;
+    // private bool spawn = false;
     private bool enemyKilled = false;
 
     // public void PauseGame ()
@@ -34,6 +34,10 @@ public class GameManager : MonoBehaviour
         levelName = scene.name;
     }
 
+    // public string getCurrentLevel(){
+    //     return levelName;
+    // }
+
     void Start()
     {
         // PauseGame();
@@ -41,13 +45,13 @@ public class GameManager : MonoBehaviour
         lifeUI.text = "LIFE: " + life;
     }
 
-    public void setSpawn(bool flag){
-        spawn = flag;
-    }
+    // public void setSpawn(bool flag){
+    //     spawn = flag;
+    // }
 
-    public bool getSpawn(){
-        return spawn;
-    }
+    // public bool getSpawn(){
+    //     return spawn;
+    // }
 
     public void setEnemyKilled(bool flag){
         enemyKilled = flag;
@@ -168,6 +172,17 @@ public class GameManager : MonoBehaviour
         yield return new WaitForSeconds(seconds);
         score = 0;
         life = 3;
-        SceneManager.LoadScene("FailEnd");
+        if (levelName == "Level1"){
+            SceneManager.LoadScene("FailEnd1");
+        }
+        else if (levelName == "Level2"){
+            SceneManager.LoadScene("FailEnd2");
+        }
+        else if (levelName == "Level3"){
+            SceneManager.LoadScene("FailEnd3");
+        }
+        else if (levelName == "Level4"){
+            SceneManager.LoadScene("FailEnd4");
+        }
     }
 }

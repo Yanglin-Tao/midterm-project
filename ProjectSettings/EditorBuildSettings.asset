@@ -30,9 +30,21 @@ EditorBuildSettings:
     path: Assets/Scenes/Level3.5.unity
     guid: 216b5e55e02264cc09c27e0014959a7c
   - enabled: 1
+    path: Assets/Scenes/Level4.unity
+    guid: 9d0d42c1948da412dba01b2c445e4f45
+  - enabled: 1
     path: Assets/Scenes/SuccessEnd.unity
     guid: 8d0467c86ef9442e8b453ec04deca281
   - enabled: 1
-    path: Assets/Scenes/FailEnd.unity
+    path: Assets/Scenes/FailEnd1.unity
+    guid: 6e0dceae19fff40adb9b3b5fa8b39b7a
+  - enabled: 1
+    path: Assets/Scenes/FailEnd2.unity
+    guid: 679ec317a5d3f4e45adae80a432aea43
+  - enabled: 1
+    path: Assets/Scenes/FailEnd3.unity
+    guid: a41e73a5dd54d4e16965e0bcb25f8c03
+  - enabled: 1
+    path: Assets/Scenes/FailEnd4.unity
     guid: fbb44647cc3554783a264f121f50bad4
   m_configObjects: {}
