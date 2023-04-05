@@ -2209,7 +2209,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d87893a0e74c442399f189761b1d30dd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _gameManager: {fileID: 0}
+  restartLevel: Level4
 --- !u!4 &1778911626
 Transform:
   m_ObjectHideFlags: 0

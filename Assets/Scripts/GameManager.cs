@@ -34,9 +34,9 @@ public class GameManager : MonoBehaviour
         levelName = scene.name;
     }
 
-    public string getCurrentLevel(){
-        return levelName;
-    }
+    // public string getCurrentLevel(){
+    //     return levelName;
+    // }
 
     void Start()
     {
@@ -172,6 +172,17 @@ public class GameManager : MonoBehaviour
         yield return new WaitForSeconds(seconds);
         score = 0;
         life = 3;
-        SceneManager.LoadScene("FailEnd");
+        if (levelName == "Level1"){
+            SceneManager.LoadScene("FailEnd1");
+        }
+        else if (levelName == "Level2"){
+            SceneManager.LoadScene("FailEnd2");
+        }
+        else if (levelName == "Level3"){
+            SceneManager.LoadScene("FailEnd3");
+        }
+        else if (levelName == "Level4"){
+            SceneManager.LoadScene("FailEnd4");
+        }
     }
 }
