@@ -5,6 +5,13 @@ using UnityEngine.SceneManagement;
 
 public class Menu : MonoBehaviour
 {
+    public string restartLevel;
+
+    public void RestartLevel(){
+        // restartLevel = _gameManager.getCurrentLevel();
+        SceneManager.LoadScene(restartLevel);
+    }
+
     public void PlayGame(){
         SceneManager.LoadScene("Level0.5");
     }
