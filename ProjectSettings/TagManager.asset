@@ -18,6 +18,7 @@ TagManager:
   - Curse
   - Level2Boss
   - Proceed
+  - Pen
   layers:
   - Default
   - TransparentFX
