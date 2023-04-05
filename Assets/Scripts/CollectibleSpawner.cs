@@ -5,7 +5,7 @@ using UnityEngine;
 public class CollectibleSpawner : MonoBehaviour
 {
     public GameObject collectPrefab;
-    public GameManager _gameManager;
+    // public GameManager _gameManager;
     private bool spawned = false;
     public float minSpawnPositionX = -30f;
     public float maxSpawnPositionX = 300f;
@@ -14,9 +14,9 @@ public class CollectibleSpawner : MonoBehaviour
     public float maxSpawnPositionY = 20;
 
 
-    void Start(){
-        _gameManager = GameObject.FindObjectOfType<GameManager>();
-    }
+    // void Start(){
+    //     _gameManager = GameObject.FindObjectOfType<GameManager>();
+    // }
 
     void Update(){
         // if (_gameManager.getSpawn() && !spawned){
