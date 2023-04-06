@@ -23,6 +23,7 @@ public class Player : MonoBehaviour
     GameManager _gameManager;
     private bool hasSword = false;
     AudioSource _audioSource;
+    private Vector3 _fixedPosition;
 
 
     void Start(){
@@ -53,7 +54,7 @@ public class Player : MonoBehaviour
 
 
     void Update(){
-        if (_gameManager.getHealth() != 0){
+        if (_gameManager.getHealth() > 0){
             isGrounded = Physics2D.OverlapCircle(feet.position, .2f, ground);
             if (Input.GetButtonDown("Jump") && isGrounded){
                 rb.AddForce(new Vector2(0, jumpForce));
@@ -70,8 +71,9 @@ public class Player : MonoBehaviour
         else{
             StartCoroutine(Death(2));
             if (flag){
-            Instantiate(explosion, transform.position, Quaternion.identity);
-               flag = false;
+                transform.position = _fixedPosition;
+                Instantiate(explosion, transform.position, Quaternion.identity);
+                flag = false;
             }
         }
         Animator.SetFloat("Health", _gameManager.getHealth());
@@ -119,13 +121,16 @@ public class Player : MonoBehaviour
                 _gameManager.MinusLife(3);
             }
         }
+        if (_gameManager.getHealth() < 1){
+            _fixedPosition = transform.position;
+            print("this ran");
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D other) {
         if(other.CompareTag("Collectible")){
             _audioSource.PlayOneShot(collectSound);
             Destroy(other.gameObject);
-            print("This ran");
             _gameManager.AddScore(1);
         }
     }

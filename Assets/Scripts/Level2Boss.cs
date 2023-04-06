@@ -14,8 +14,9 @@ public class Level2Boss : MonoBehaviour
     public AudioClip deathSound;
     AudioSource _audioSource;
 
-    int bulletSpeed = 600;
+    int bulletSpeed = 800;
     public GameObject bulletPrefab;
+    public GameObject explosion;
     public Transform spawnPoint;
     int health;
     bool flag = true;
@@ -44,7 +45,6 @@ public class Level2Boss : MonoBehaviour
             transform.localScale = new Vector3(-localScale.x, localScale.y, localScale.z);
             
             Animator.SetBool("canThrow", true);
-            print("this");
             GameObject Bullet = Instantiate(bulletPrefab, spawnPoint.position, Quaternion.identity);
             Bullet.GetComponent<Rigidbody2D>().AddForce(new Vector3(bulletSpeed, 0, 1));
             Destroy(Bullet, 2);

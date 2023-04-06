@@ -72,10 +72,11 @@ public class GameManager : MonoBehaviour
         if (life > 0)
         {
             life -= amount;
-            lifeUI.text = "LIFE: " + life;
             if (life <= 0){
                 GameOver = true;
+                life = 0;
             }
+            lifeUI.text = "LIFE: " + life;
         }
     }
 

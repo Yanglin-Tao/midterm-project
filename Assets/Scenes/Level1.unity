@@ -2785,11 +2785,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c8dbbb60f768f405f9586c5e6d6ef605, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 5
-  deathSound: {fileID: 0}
-  collectSound: {fileID: 0}
-  explosion: {fileID: 0}
+  speed: 10
+  deathSound: {fileID: 8300000, guid: bc2e49a34b2ba4f0b87dd54e8419e19a, type: 3}
   bulletPrefab: {fileID: 3352897031744198240, guid: ab561fe47bdf899469f9d7813596bfa7, type: 3}
+  explosion: {fileID: 1686634913543773074, guid: 35d7e152d229ecd4eb8fa72bf26e33cd, type: 3}
   spawnPoint: {fileID: 891902309}
 --- !u!82 &452228416
 AudioSource:
