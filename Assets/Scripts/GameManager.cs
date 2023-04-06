@@ -163,6 +163,10 @@ public class GameManager : MonoBehaviour
     }
 
     void Update(){
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            QuitGame();
+        }
         if (levelName == "Level4")
         {
             if (score >= 10 && enemyKilled){
@@ -174,6 +178,15 @@ public class GameManager : MonoBehaviour
             GameOver = false;
         }
         screenChecker();
+    }
+    
+    void QuitGame()
+    {
+        #if UNITY_EDITOR
+            UnityEditor.EditorApplication.isPlaying = false;
+        #else
+            Application.Quit();
+        #endif
     }
 
     IEnumerator swapToEnd (int seconds) {
