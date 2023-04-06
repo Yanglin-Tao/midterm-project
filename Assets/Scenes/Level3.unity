@@ -3243,6 +3243,7 @@ GameObject:
   - component: {fileID: 736684493}
   - component: {fileID: 736684498}
   - component: {fileID: 736684499}
+  - component: {fileID: 736684500}
   m_Layer: 0
   m_Name: bill_man_3
   m_TagString: Billman
@@ -3362,6 +3363,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 466816626}
+  - {fileID: 1716633307}
   m_Father: {fileID: 0}
   m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -3406,6 +3408,22 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
+--- !u!114 &736684500
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 736684492}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 618faf6ee16094d118c17144d1d100fd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxbulletSpeed: 0.5
+  spawnPoint: {fileID: 1716633307}
+  bulletPrefab: {fileID: 1276340616868946648, guid: d6a03201bf468407395adb2d40399fe7, type: 3}
+  fireRate: 0.002
 --- !u!1 &755656344
 GameObject:
   m_ObjectHideFlags: 0
@@ -5346,6 +5364,37 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bc9b83f4de211443a97721eb67dee6fa, type: 3}
+--- !u!1 &1444907777
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1444907778}
+  m_Layer: 0
+  m_Name: SpawnPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1444907778
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1444907777}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2094505173}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1494506098
 GameObject:
   m_ObjectHideFlags: 0
@@ -6132,6 +6181,37 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bc9b83f4de211443a97721eb67dee6fa, type: 3}
+--- !u!1 &1716633306
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1716633307}
+  m_Layer: 0
+  m_Name: SpawnPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1716633307
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1716633306}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.06, y: -0.05, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 736684496}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1784610298
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7369,6 +7449,7 @@ GameObject:
   - component: {fileID: 2094505170}
   - component: {fileID: 2094505169}
   - component: {fileID: 2094505168}
+  - component: {fileID: 2094505174}
   m_Layer: 0
   m_Name: bill_man_3 (1)
   m_TagString: Billman
@@ -7529,9 +7610,26 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1798199089}
+  - {fileID: 1444907778}
   m_Father: {fileID: 0}
   m_RootOrder: 25
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2094505174
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2094505167}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 618faf6ee16094d118c17144d1d100fd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxbulletSpeed: 0.5
+  spawnPoint: {fileID: 1444907778}
+  bulletPrefab: {fileID: 1276340616868946648, guid: 6145111477b334759afb2494b701c565, type: 3}
+  fireRate: 0.0008
 --- !u!1 &2095346097
 GameObject:
   m_ObjectHideFlags: 0
