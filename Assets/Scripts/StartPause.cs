@@ -7,6 +7,7 @@ public class StartPause : MonoBehaviour
     void Start()
     {
         Time.timeScale = 0;
+        Debug.Log("game paused");
     }
 
     public void PauseGame ()
@@ -16,5 +17,6 @@ public class StartPause : MonoBehaviour
     public void ResumeGame ()
     {
         Time.timeScale = 1;
+        Debug.Log("game resumed");
     }
 }
