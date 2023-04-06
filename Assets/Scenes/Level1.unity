@@ -5814,16 +5814,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Now, you will navigate David through school life. Use LEFT and RIGHT keys
-    to move the player and SPACE to jump. Help David eat meals as they help David
-    grow and gain strength. Be aware of the spikes! The bad bully throws tomatoes
-    at you, and these can get very nasty. Avoid the bully as much as you can.
-
-
-    Hint:
-    Get score to 10.
-
-'
+  m_text: "Now, you will navigate David through school life. Use LEFT and RIGHT keys
+    to move the player and SPACE to throw the burgers!\n\nBe aware of the spikes!
+    The bad bully throws tomatoes at you, and these can get very nasty. \n\nAvoid
+    the bully as much as you can.\n\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}

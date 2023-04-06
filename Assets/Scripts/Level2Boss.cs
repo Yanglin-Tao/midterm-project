@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using System;
 using UnityEngine.SceneManagement;
 
 public class Level2Boss : MonoBehaviour
@@ -56,24 +58,9 @@ public class Level2Boss : MonoBehaviour
             if (health < 1){
                 Instantiate(explosion, transform.position, Quaternion.identity);
                 Destroy(gameObject);
+                _gameManager.NextScene("Level1.5");
             }
+        }
     }
-}
 
-    // public void loseHealth(int num){
-    //     health -= num;
-    //     if (health <= 0){
-    //         Instantiate(explosion, transform.position, Quaternion.identity);
-    //         Destroy(gameObject);
-    //     }
-    // }
-
-    // IEnumerator Death (int seconds) {
-    //     _audioSource.PlayOneShot(deathSound);
-    //     int counter = seconds;
-    //     yield return new WaitForSeconds(seconds);
-    //     Instantiate(explosion, transform.position, Quaternion.identity);
-    //     Destroy(gameObject);
-        
-    // }
 }
