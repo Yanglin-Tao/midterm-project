@@ -2619,7 +2619,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 466816625}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 140.17, y: -9.982, z: 0}
+  m_LocalPosition: {x: 0.03, y: -1.1, z: 0}
   m_LocalScale: {x: 0.385, y: 0.59999996, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2757,7 +2757,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 557960706}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 140.17, y: -9.982, z: 0}
+  m_LocalPosition: {x: 0.03, y: -0.98, z: 0}
   m_LocalScale: {x: 0.385, y: 0.59999996, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4342,6 +4342,7 @@ MonoBehaviour:
   collectSound: {fileID: 8300000, guid: 9f5abcdb12ae54b6492758eb48b5b671, type: 3}
   speed: 6
   jumpForce: 1000
+  bulletSpeed: 0
   ground:
     serializedVersion: 2
     m_Bits: 2147483647
@@ -6301,7 +6302,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1798199088}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 140.17, y: -9.982, z: 0}
+  m_LocalPosition: {x: 0, y: -1.08, z: 0}
   m_LocalScale: {x: 0.385, y: 0.59999996, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
