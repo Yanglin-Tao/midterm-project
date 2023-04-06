@@ -53,6 +53,12 @@ public class GameManager : MonoBehaviour
     //     return spawn;
     // }
 
+    public void NextScene(string name){
+        print("This ran");
+
+        StartCoroutine(Next(5, name));
+    }
+
     public void setEnemyKilled(bool flag){
         enemyKilled = flag;
     }
@@ -192,5 +198,10 @@ public class GameManager : MonoBehaviour
         else if (levelName == "Level4"){
             SceneManager.LoadScene("FailEnd4");
         }
+    }
+    IEnumerator Next(int seconds, string level) {
+        int counter = seconds;
+        yield return new WaitForSeconds(seconds);
+        SceneManager.LoadScene(level);
     }
 }
