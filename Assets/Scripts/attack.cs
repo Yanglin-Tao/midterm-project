@@ -7,6 +7,7 @@ public class attack : MonoBehaviour
     int speed;
     Rigidbody2D _rigidbody2D;
     GameManager _gameManager;
+    GameObject[] _Bully;
     // public AudioClip collectSound;
     // AudioSource _audioSource;
     public GameObject explosion;
@@ -17,7 +18,6 @@ public class attack : MonoBehaviour
         _rigidbody2D = GetComponent<Rigidbody2D>();
         _rigidbody2D.AddForce(new Vector2(0, -speed));
         _gameManager = GameObject.FindObjectOfType<GameManager>();
-        // _audioSource = GetComponent<AudioSource>();
     }
 
     private void OnTriggerEnter2D(Collider2D other) {

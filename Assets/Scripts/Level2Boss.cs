@@ -24,7 +24,7 @@ public class Level2Boss : MonoBehaviour
         Animator = GetComponent<Animator>();
         _gameManager = GameObject.FindObjectOfType<GameManager>();
         _rigidbody = GetComponent<Rigidbody2D>();
-        health = 3;
+        health = 5;
 
     }
 
@@ -48,22 +48,32 @@ public class Level2Boss : MonoBehaviour
             Bullet.GetComponent<Rigidbody2D>().AddForce(new Vector3(bulletSpeed, 0, 1));
             Animator.SetBool("canThrow", false);
         }
+    }
 
-        if (collision.gameObject.tag == "Burger"){
+    private void OnTriggerEnter2D(Collider2D other){
+        if (other.CompareTag("Burger")){
             health -= 1;
-            if (health == 0){
-                StartCoroutine(Death(2));
+            if (health < 1){
+                Instantiate(explosion, transform.position, Quaternion.identity);
+                Destroy(gameObject);
             }
-        }
-
     }
+}
 
-    IEnumerator Death (int seconds) {
-        _audioSource.PlayOneShot(deathSound);
-        int counter = seconds;
-        yield return new WaitForSeconds(seconds);
-        Instantiate(explosion, transform.position, Quaternion.identity);
-        Destroy(gameObject);
+    // public void loseHealth(int num){
+    //     health -= num;
+    //     if (health <= 0){
+    //         Instantiate(explosion, transform.position, Quaternion.identity);
+    //         Destroy(gameObject);
+    //     }
+    // }
+
+    // IEnumerator Death (int seconds) {
+    //     _audioSource.PlayOneShot(deathSound);
+    //     int counter = seconds;
+    //     yield return new WaitForSeconds(seconds);
+    //     Instantiate(explosion, transform.position, Quaternion.identity);
+    //     Destroy(gameObject);
         
-    }
+    // }
 }
