@@ -13,7 +13,6 @@ public class Player : MonoBehaviour
 
     public LayerMask ground;
     bool isGrounded = false;
-    bool flag = true;
     public Transform feet;
 
     private Rigidbody2D rb;
@@ -23,7 +22,9 @@ public class Player : MonoBehaviour
     GameManager _gameManager;
     private bool hasSword = false;
     AudioSource _audioSource;
-    private Vector3 _fixedPosition;
+
+    public GameObject bulletPrefab;
+    public Transform spawnPoint;
 
 
     void Start(){
@@ -70,11 +71,6 @@ public class Player : MonoBehaviour
         }
         else{
             StartCoroutine(Death(2));
-            if (flag){
-                transform.position = _fixedPosition;
-                Instantiate(explosion, transform.position, Quaternion.identity);
-                flag = false;
-            }
         }
         Animator.SetFloat("Health", _gameManager.getHealth());
     }
@@ -121,10 +117,6 @@ public class Player : MonoBehaviour
                 _gameManager.MinusLife(3);
             }
         }
-        if (_gameManager.getHealth() < 1){
-            _fixedPosition = transform.position;
-            print("this ran");
-        }
     }
 
     private void OnTriggerEnter2D(Collider2D other) {
@@ -139,6 +131,7 @@ public class Player : MonoBehaviour
         _audioSource.PlayOneShot(deathSound);
         int counter = seconds;
         yield return new WaitForSeconds(seconds);
+        Instantiate(explosion, transform.position, Quaternion.identity);
         Destroy(gameObject);
     }
 

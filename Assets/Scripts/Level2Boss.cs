@@ -14,12 +14,11 @@ public class Level2Boss : MonoBehaviour
     public AudioClip deathSound;
     AudioSource _audioSource;
 
-    int bulletSpeed = 800;
+    int bulletSpeed = 1000;
     public GameObject bulletPrefab;
     public GameObject explosion;
     public Transform spawnPoint;
     int health;
-    bool flag = true;
 
     void Start(){
         Animator = GetComponent<Animator>();
@@ -37,6 +36,7 @@ public class Level2Boss : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D collision){
         if (collision.gameObject.tag == "Pen"){
+            Animator.SetBool("canThrow", true);
             speed = -speed;
             bulletSpeed = -bulletSpeed;
             // get current localScale
@@ -44,10 +44,8 @@ public class Level2Boss : MonoBehaviour
             // flip x axis
             transform.localScale = new Vector3(-localScale.x, localScale.y, localScale.z);
             
-            Animator.SetBool("canThrow", true);
             GameObject Bullet = Instantiate(bulletPrefab, spawnPoint.position, Quaternion.identity);
             Bullet.GetComponent<Rigidbody2D>().AddForce(new Vector3(bulletSpeed, 0, 1));
-            Destroy(Bullet, 2);
             Animator.SetBool("canThrow", false);
         }
 
@@ -55,11 +53,6 @@ public class Level2Boss : MonoBehaviour
             health -= 1;
             if (health == 0){
                 StartCoroutine(Death(2));
-                if (flag){
-                    Instantiate(explosion, transform.position, Quaternion.identity);
-                    flag = false;
-                }
-                Animator.SetFloat("Dead", 1);
             }
         }
 
@@ -69,6 +62,8 @@ public class Level2Boss : MonoBehaviour
         _audioSource.PlayOneShot(deathSound);
         int counter = seconds;
         yield return new WaitForSeconds(seconds);
+        Instantiate(explosion, transform.position, Quaternion.identity);
         Destroy(gameObject);
+        
     }
 }
