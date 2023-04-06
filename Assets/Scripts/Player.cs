@@ -10,6 +10,7 @@ public class Player : MonoBehaviour
     public AudioClip collectSound;
     public float speed = 6;
     public float jumpForce = 300;
+    public float bulletSpeed = 900;
 
     public LayerMask ground;
     bool isGrounded = false;
@@ -67,6 +68,14 @@ public class Player : MonoBehaviour
             // player dies if he falls off the map
             if (transform.position.y < -10){
                 _gameManager.MinusLife(3);
+            }
+            if (Input.GetButtonDown("Fire1") && _gameManager.getScore() > 0){
+                GameObject newBullet = Instantiate(bulletPrefab, spawnPoint.position, Quaternion.identity);
+                if (transform.localScale.x < 0){
+                    bulletSpeed *= -1;
+                }
+                newBullet.GetComponent<Rigidbody2D>().AddForce(new Vector3(bulletSpeed, 0, 1));
+                _gameManager.minusScore();
             }
         }
         else{

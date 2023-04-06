@@ -57,6 +57,13 @@ public class GameManager : MonoBehaviour
         enemyKilled = flag;
     }
 
+    public void minusScore(){
+        if (score > 0){
+            score -= 1;
+        }
+        scoreUI.text = "SCORE: " + score;
+    }
+
     public float getHealth(){
         return life;
     }

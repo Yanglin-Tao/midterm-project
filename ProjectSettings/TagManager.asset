@@ -19,6 +19,8 @@ TagManager:
   - Level2Boss
   - Proceed
   - Pen
+  - Glass
+  - Burger
   layers:
   - Default
   - TransparentFX
