@@ -147,7 +147,7 @@ public class GameManager : MonoBehaviour
         }
         if (levelName == "Level4")
         {
-            if (score >= 10 && enemyKilled){
+            if (score >= 12 && enemyKilled){
                 StartCoroutine(swapToEnd(6));
             }
         }
