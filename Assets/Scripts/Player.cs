@@ -122,7 +122,7 @@ public class Player : MonoBehaviour
         if (collision.gameObject.tag == "Reaper"){
             if (hasSword){
                 Animator.SetBool("Attack", true);
-                if (_gameManager.getScore() < 1){
+                if (_gameManager.getScore() < 5){
                     _gameManager.MinusLife(3);
                 }
             }
