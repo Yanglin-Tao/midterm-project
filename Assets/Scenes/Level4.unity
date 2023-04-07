@@ -8367,13 +8367,12 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: 'Now, you will navigate David through the elderly and avoid being killed
-    by the Death Reaper. Help David take vitamins, as they are important health boosters.
-    The death reaper is very merciless and will kill David if he does not have a
-    weapon to protect himself. Help David find the sword that can effectly kill the
-    Death Reaper.
+    by the Death Reaper. Use LEFT and RIGHT keys to move the player, UP to jump,
+    and SPACE to attack.  Use ESCAPE to quit the game.
 
 
-    Hint: Get score to 10.
+    Hint: Get 10 vitamin
+    pills, find the sword, and kill the Death Reaper
 
 '
   m_isRightToLeft: 0

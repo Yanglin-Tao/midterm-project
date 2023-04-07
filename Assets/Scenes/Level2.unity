@@ -8124,7 +8124,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1499837872}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 12.95, y: 0.53, z: -0.09155861}
+  m_LocalPosition: {x: 12.95, y: -0.12, z: -0.09155861}
   m_LocalScale: {x: 5.1738753, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -8205,13 +8205,13 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Now, you will navigate David through office life. Help David receive as
-    many kudos as you can, as they are very important for him to restore confidence.
-    The mean boss throws curse words at him, and David must fight back using gun
-    that can shoot paper clips at his enemy.
+  m_text: 'Now, you will navigate David through office life and avoid being insulted
+    by his mean boss. Use LEFT and RIGHT keys to move the player, UP to jump, and
+    SPACE to attack.  Use ESCAPE to quit the game.
 
 
-    Hint: Defeat your boss!
+    Hint: Get kudos and defeat
+    the boss
 
 '
   m_isRightToLeft: 0

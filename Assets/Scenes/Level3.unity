@@ -9829,13 +9829,14 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: 'Now, you will navigate David through the middle age crisis and avoid being
-    charged by the ruthless bill man. Help David earn as much money as you can, as
-    he has always wanted to afford his own apartment. The bill man sends bill letters
-    at him, and David must fight back using a gun that can shoot coins at his enemy.
+    charged by the ruthless bill man. Use LEFT and RIGHT keys to move the player,
+    UP to jump, and SPACE to attack.  Use ESCAPE to quit the game.
 
 
-    Hint:
-    Collect all the money!'
+    Hint: Collect
+    all the money!
+
+'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -11015,7 +11016,7 @@ MonoBehaviour:
     m_Bits: 1
   feet: {fileID: 537764471}
   explosion: {fileID: 1686634913543773074, guid: 35d7e152d229ecd4eb8fa72bf26e33cd, type: 3}
-  bulletPrefab: {fileID: 8457821590988754308, guid: 1ffa402ec388db84eb462ce95a0f5407, type: 3}
+  bulletPrefab: {fileID: 983338389207726399, guid: 61e40aa738b5a42869fcfc0f6021f6e8, type: 3}
   spawnPoint: {fileID: 1848038025}
 --- !u!60 &1882979322
 PolygonCollider2D:

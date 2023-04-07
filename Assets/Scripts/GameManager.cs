@@ -16,17 +16,7 @@ public class GameManager : MonoBehaviour
 
     private bool GameOver = false;
     private bool hasSword = false;
-    // private bool spawn = false;
     private bool enemyKilled = false;
-
-    // public void PauseGame ()
-    // {
-    //     Time.timeScale = 0;
-    // }
-    // public void ResumeGame ()
-    // {
-    //     Time.timeScale = 1;
-    // }
 
     private void Awake()
     {
@@ -34,28 +24,15 @@ public class GameManager : MonoBehaviour
         levelName = scene.name;
     }
 
-    // public string getCurrentLevel(){
-    //     return levelName;
-    // }
-
     public string getScene(){
         return levelName;
     }
 
     void Start()
     {
-        // PauseGame();
         scoreUI.text = "SCORE: " + score;
         lifeUI.text = "HEALTH: " + life;
     }
-
-    // public void setSpawn(bool flag){
-    //     spawn = flag;
-    // }
-
-    // public bool getSpawn(){
-    //     return spawn;
-    // }
 
     public void NextScene(string name){
         StartCoroutine(Next(5, name));
@@ -128,7 +105,6 @@ public class GameManager : MonoBehaviour
             Application.Quit();
         }
 #endif
-
     // if (levelName == "Level1")
     //     {
     //     if (score >= 10 && enemyKilled)
