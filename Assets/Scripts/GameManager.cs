@@ -42,7 +42,7 @@ public class GameManager : MonoBehaviour
     {
         // PauseGame();
         scoreUI.text = "SCORE: " + score;
-        lifeUI.text = "LIFE: " + life;
+        lifeUI.text = "HEALTH: " + life;
     }
 
     // public void setSpawn(bool flag){
@@ -89,7 +89,7 @@ public class GameManager : MonoBehaviour
                 GameOver = true;
                 life = 0;
             }
-            lifeUI.text = "LIFE: " + life;
+            lifeUI.text = "HEALTH: " + life;
         }
     }
 
@@ -98,7 +98,7 @@ public class GameManager : MonoBehaviour
         if (life > 0)
         {
             life += amount;
-            lifeUI.text = "LIFE: " + life;
+            lifeUI.text = "HEALTH: " + life;
         }
     }
 
@@ -179,7 +179,7 @@ public class GameManager : MonoBehaviour
         }
         screenChecker();
     }
-    
+
     void QuitGame()
     {
         #if UNITY_EDITOR
