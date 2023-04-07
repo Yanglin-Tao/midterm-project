@@ -20,13 +20,13 @@ public class Level2Boss : MonoBehaviour
     public GameObject bulletPrefab;
     public GameObject explosion;
     public Transform spawnPoint;
-    int health;
+    public string nextLvl;
+    public int health;
 
     void Start(){
         Animator = GetComponent<Animator>();
         _gameManager = GameObject.FindObjectOfType<GameManager>();
         _rigidbody = GetComponent<Rigidbody2D>();
-        health = 5;
 
     }
 
@@ -38,17 +38,7 @@ public class Level2Boss : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D collision){
         if (collision.gameObject.tag == "Pen"){
-            Animator.SetBool("canThrow", true);
-            speed = -speed;
-            bulletSpeed = -bulletSpeed;
-            // get current localScale
-            Vector3 localScale = transform.localScale;
-            // flip x axis
-            transform.localScale = new Vector3(-localScale.x, localScale.y, localScale.z);
-            
-            GameObject Bullet = Instantiate(bulletPrefab, spawnPoint.position, Quaternion.identity);
-            Bullet.GetComponent<Rigidbody2D>().AddForce(new Vector3(bulletSpeed, 0, 1));
-            Animator.SetBool("canThrow", false);
+            turnAndshoot();
         }
     }
 
@@ -58,9 +48,26 @@ public class Level2Boss : MonoBehaviour
             if (health < 1){
                 Instantiate(explosion, transform.position, Quaternion.identity);
                 Destroy(gameObject);
-                _gameManager.NextScene("Level1.5");
+                _gameManager.NextScene(nextLvl);
             }
         }
+        if (other.CompareTag("Proceed")){
+            turnAndshoot();
+        }
+    }
+
+    void turnAndshoot(){
+        Animator.SetBool("canThrow", true);
+        speed = -speed;
+        bulletSpeed = -bulletSpeed;
+        // get current localScale
+        Vector3 localScale = transform.localScale;
+        // flip x axis
+        transform.localScale = new Vector3(-localScale.x, localScale.y, localScale.z);
+        
+        GameObject Bullet = Instantiate(bulletPrefab, spawnPoint.position, Quaternion.identity);
+        Bullet.GetComponent<Rigidbody2D>().AddForce(new Vector3(bulletSpeed, 0, 1));
+        Animator.SetBool("canThrow", false);
     }
 
 }
