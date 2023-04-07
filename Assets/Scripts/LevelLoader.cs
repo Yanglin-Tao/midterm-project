@@ -5,6 +5,9 @@ using UnityEngine.SceneManagement;
 
 public class LevelLoader : MonoBehaviour
 {
+    public void loadHome(){
+        SceneManager.LoadScene("Start");
+    }
     public void loadLevel1(){
         SceneManager.LoadScene("Level0.5");
     }
