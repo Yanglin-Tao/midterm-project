@@ -11331,7 +11331,7 @@ MonoBehaviour:
     m_Bits: 1
   feet: {fileID: 537764471}
   explosion: {fileID: 1686634913543773074, guid: 35d7e152d229ecd4eb8fa72bf26e33cd, type: 3}
-  bulletPrefab: {fileID: 983338389207726399, guid: 61e40aa738b5a42869fcfc0f6021f6e8, type: 3}
+  bulletPrefab: {fileID: 3547596164088555, guid: 7fe3203f6ce6da84687a56448f0cd74a, type: 3}
   spawnPoint: {fileID: 1848038025}
 --- !u!60 &1882979322
 PolygonCollider2D:
