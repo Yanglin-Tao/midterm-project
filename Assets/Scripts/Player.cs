@@ -69,16 +69,31 @@ public class Player : MonoBehaviour
             if (transform.position.y < -10){
                 _gameManager.MinusLife(3);
             }
-            if (Input.GetButtonDown("Fire1") && _gameManager.getScore() > 0){
-                if (transform.localScale.x < 0){
-                    bulletSpeed = -Mathf.Abs(bulletSpeed);
+            if (_gameManager.getScene() == "Level4" && hasSword)
+                if (Input.GetButtonDown("Fire1") && _gameManager.getScore() > 0){
+                    if (transform.localScale.x < 0){
+                        bulletSpeed = -Mathf.Abs(bulletSpeed);
+                    }
+                    else{
+                        bulletSpeed = Mathf.Abs(bulletSpeed);
+                    }
+                    GameObject Bullet = Instantiate(bulletPrefab, spawnPoint.position, Quaternion.identity);
+                    Bullet.GetComponent<Rigidbody2D>().AddForce(new Vector3(bulletSpeed, 0, 1));
+                    _gameManager.minusScore();
                 }
-                else{
-                    bulletSpeed = Mathf.Abs(bulletSpeed);
+            if (_gameManager.getScene() != "Level4"){
+                if (Input.GetButtonDown("Fire1") && _gameManager.getScore() > 0){
+                    if (transform.localScale.x < 0){
+                        bulletSpeed = -Mathf.Abs(bulletSpeed);
+                    }
+                    else{
+                        bulletSpeed = Mathf.Abs(bulletSpeed);
+                    }
+                    GameObject Bullet = Instantiate(bulletPrefab, spawnPoint.position, Quaternion.identity);
+                    Bullet.GetComponent<Rigidbody2D>().AddForce(new Vector3(bulletSpeed, 0, 1));
+                    _gameManager.minusScore();
                 }
-                GameObject Bullet = Instantiate(bulletPrefab, spawnPoint.position, Quaternion.identity);
-                Bullet.GetComponent<Rigidbody2D>().AddForce(new Vector3(bulletSpeed, 0, 1));
-                _gameManager.minusScore();
+
             }
         }
         else{

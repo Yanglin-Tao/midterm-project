@@ -145,12 +145,12 @@ public class GameManager : MonoBehaviour
         {
             QuitGame();
         }
-        if (levelName == "Level4")
-        {
-            if (score >= 10 && enemyKilled){
-                StartCoroutine(swapToEnd(6));
-            }
-        }
+        // if (levelName == "Level4")
+        // {
+        //     if (score >= 10 && enemyKilled){
+        //         StartCoroutine(swapToEnd(6));
+        //     }
+        // }
         if (GameOver){
             StartCoroutine(swapToLost(6));
             GameOver = false;

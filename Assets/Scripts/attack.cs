@@ -31,4 +31,11 @@ public class attack : MonoBehaviour
         // if(other.CompareTag("Player")){
 
     }
+    private void OnCollisionEnter2D(Collision2D other) {
+        Destroy(gameObject);
+        
+
+        // if(other.CompareTag("Player")){
+
+    }
 }
