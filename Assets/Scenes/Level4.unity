@@ -543,7 +543,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 3c1a00edb1c4b4ebfa9a2fed88d803fb, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.4
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -2113,8 +2113,8 @@ MonoBehaviour:
     m_Bits: 1
   feet: {fileID: 1995658143}
   explosion: {fileID: 1686634913543773074, guid: 35d7e152d229ecd4eb8fa72bf26e33cd, type: 3}
-  bulletPrefab: {fileID: 0}
-  spawnPoint: {fileID: 0}
+  bulletPrefab: {fileID: 6206987179790340547, guid: 2ed2a4703f3bc429997ab4b40c00d3b9, type: 3}
+  spawnPoint: {fileID: 1701295815}
 --- !u!95 &426487509
 Animator:
   serializedVersion: 5
@@ -2220,6 +2220,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 1701295815}
   - {fileID: 1995658143}
   m_Father: {fileID: 0}
   m_RootOrder: 21
@@ -8308,6 +8309,37 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2ed2a4703f3bc429997ab4b40c00d3b9, type: 3}
+--- !u!1 &1701295814
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1701295815}
+  m_Layer: 0
+  m_Name: shoot (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 2974397684917235467, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1701295815
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1701295814}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 1.23, y: 0.11, z: 0}
+  m_LocalScale: {x: 1.5, y: 1.5, z: 1.5}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 426487513}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1713046530
 GameObject:
   m_ObjectHideFlags: 0
@@ -8367,12 +8399,12 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: 'Now, you will navigate David through the elderly and avoid being killed
-    by the Death Reaper. Use LEFT and RIGHT keys to move the player, UP to jump,
-    and SPACE to attack.  Use ESCAPE to quit the game.
+    by the Death Reaper. Use LEFT and RIGHT keys to move the player, and UP to jump. 
+    Use ESCAPE to quit the game.
 
 
-    Hint: Get 10 vitamin
-    pills, find the sword, and kill the Death Reaper
+    Hint: Get 10 vitamin pills, find the sword,
+    and kill the Death Reaper
 
 '
   m_isRightToLeft: 0
@@ -10193,7 +10225,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 426487513}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &1995658144
 BoxCollider2D:
