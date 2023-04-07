@@ -8211,8 +8211,7 @@ MonoBehaviour:
     that can shoot paper clips at his enemy.
 
 
-    Hint: Get score to 10, or get
-    to 5 and step on your boss.
+    Hint: Defeat your boss!
 
 '
   m_isRightToLeft: 0
@@ -9900,6 +9899,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 10
   deathSound: {fileID: 8300000, guid: bc2e49a34b2ba4f0b87dd54e8419e19a, type: 3}
+  bulletSpeed: 1000
   bulletPrefab: {fileID: 8200211801221531732, guid: 4a321865770c948eda90418abd1fa3bd, type: 3}
   explosion: {fileID: 1686634913543773074, guid: 35d7e152d229ecd4eb8fa72bf26e33cd, type: 3}
   spawnPoint: {fileID: 642210824}
