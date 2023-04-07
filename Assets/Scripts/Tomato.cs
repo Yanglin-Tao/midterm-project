@@ -17,7 +17,7 @@ public class Tomato : MonoBehaviour
     }
     
     void OnCollisionEnter2D(Collision2D collision){
-        if (collision.gameObject.tag == "Player" || collision.gameObject.tag == "Pen"){
+        if (collision.gameObject.tag == "Player" || collision.gameObject.tag == "Pen" || collision.gameObject.tag == "Proceed"){
             Destroy(gameObject);
         }
     }

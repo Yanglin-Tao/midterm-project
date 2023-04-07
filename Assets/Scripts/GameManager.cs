@@ -38,6 +38,10 @@ public class GameManager : MonoBehaviour
     //     return levelName;
     // }
 
+    public string getScene(){
+        return levelName;
+    }
+
     void Start()
     {
         // PauseGame();
@@ -54,8 +58,6 @@ public class GameManager : MonoBehaviour
     // }
 
     public void NextScene(string name){
-        print("This ran");
-
         StartCoroutine(Next(5, name));
     }
 
@@ -127,39 +129,39 @@ public class GameManager : MonoBehaviour
         }
 #endif
 
-    if (levelName == "Level1")
-        {
-        if (score >= 10 && enemyKilled)
-        {
-            Destroy(gameObject);
-            SceneManager.LoadScene("Level1.5");
-        }
-        }
-    if (levelName == "Level2")
-        {
-            // This value is intended to be 100
-            // For entering Level3
-            // 1. get to 10 score
-            // 2. get to 5 and step on the boss
-        if (score >= 10 && enemyKilled)
-        {
-            Destroy(gameObject);
-            SceneManager.LoadScene("Level2.5");
-        }
-        }
+    // if (levelName == "Level1")
+    //     {
+    //     if (score >= 10 && enemyKilled)
+    //     {
+    //         Destroy(gameObject);
+    //         SceneManager.LoadScene("Level1.5");
+    //     }
+    //     }
+    // if (levelName == "Level2")
+    //     {
+    //         // This value is intended to be 100
+    //         // For entering Level3
+    //         // 1. get to 10 score
+    //         // 2. get to 5 and step on the boss
+    //     // if (score >= 10 && enemyKilled)
+    //     // {
+    //     //     Destroy(gameObject);
+    //     //     SceneManager.LoadScene("Level2.5");
+    //     // }
+    //     // }
 
-    if (levelName == "Level3")
-        {
-            // This value is intended to be 100
-            // For entering Level4
-            // 1. get to 10 score
-            // 2. get to the final portal
-        if (score >= 10 && enemyKilled)
-        {
-            Destroy(gameObject);
-            SceneManager.LoadScene("Level3.5");
-        }
-        }
+    // if (levelName == "Level3")
+    //     {
+    //         // This value is intended to be 100
+    //         // For entering Level4
+    //         // 1. get to 10 score
+    //         // 2. get to the final portal
+    //     if (score >= 10 && enemyKilled)
+    //     {
+    //         Destroy(gameObject);
+    //         SceneManager.LoadScene("Level3.5");
+    //     }
+    //     }
     }
 
     void Update(){

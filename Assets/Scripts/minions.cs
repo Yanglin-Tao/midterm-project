@@ -5,7 +5,7 @@ using UnityEngine.UI;
 using System;
 using UnityEngine.SceneManagement;
 
-public class Level2Boss : MonoBehaviour
+public class minions : MonoBehaviour
 {
     private Animator Animator;
     GameManager _gameManager;
@@ -16,7 +16,7 @@ public class Level2Boss : MonoBehaviour
     public AudioClip deathSound;
     AudioSource _audioSource;
 
-    public int bulletSpeed = 1000;
+    int bulletSpeed = 500;
     public GameObject bulletPrefab;
     public GameObject explosion;
     public Transform spawnPoint;
@@ -48,7 +48,7 @@ public class Level2Boss : MonoBehaviour
             if (health < 1){
                 Instantiate(explosion, transform.position, Quaternion.identity);
                 Destroy(gameObject);
-                _gameManager.NextScene(nextLvl);
+                // _gameManager.NextScene(nextLvl);
             }
         }
         if (other.CompareTag("Proceed")){

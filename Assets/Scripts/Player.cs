@@ -96,6 +96,7 @@ public class Player : MonoBehaviour
             _gameManager.MinusLife(3);
         }
         if (collision.gameObject.tag == "Tomato"){
+            print("THJI RAN");
             _gameManager.MinusLife(1);
         }
         if (collision.gameObject.tag == "Curse"){

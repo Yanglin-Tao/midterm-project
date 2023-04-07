@@ -12,8 +12,8 @@ GameObject:
   - component: {fileID: 1489551684259368372}
   - component: {fileID: 4234695125966379385}
   - component: {fileID: 6699057414889915221}
-  - component: {fileID: 19803165738729450}
   - component: {fileID: 7820041659070901514}
+  - component: {fileID: -8295383232599666977}
   m_Layer: 0
   m_Name: CurseWord
   m_TagString: Tomato
@@ -119,7 +119,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: -0.83631945, y: 0.31303358}
@@ -135,19 +135,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 19.497204, y: 15.626311}
   m_EdgeRadius: 0
---- !u!114 &19803165738729450
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8200211801221531732}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 647c4f2c73b2c6d479db3eb704995930, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  explosion: {fileID: 1686634913543773074, guid: bb82ab3303fb0244ebafd40b406c39c6, type: 3}
 --- !u!114 &7820041659070901514
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -161,3 +148,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lifeTime: 3
+--- !u!114 &-8295383232599666977
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8200211801221531732}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f48fd6330a8d7074c82173ec8d69d9eb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

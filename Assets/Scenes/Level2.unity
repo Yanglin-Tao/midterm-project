@@ -9742,7 +9742,6 @@ GameObject:
   - component: {fileID: 1886433179}
   - component: {fileID: 1886433181}
   - component: {fileID: 1886433180}
-  - component: {fileID: 1886433183}
   - component: {fileID: 1886433184}
   m_Layer: 0
   m_Name: Boss
@@ -9887,22 +9886,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!114 &1886433183
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1886433176}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 618faf6ee16094d118c17144d1d100fd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  maxbulletSpeed: 1
-  spawnPoint: {fileID: 642210824}
-  bulletPrefab: {fileID: 8200211801221531732, guid: 4a321865770c948eda90418abd1fa3bd, type: 3}
-  fireRate: 0.0002
 --- !u!114 &1886433184
 MonoBehaviour:
   m_ObjectHideFlags: 0
